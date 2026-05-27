@@ -1,0 +1,988 @@
+RT Newspaper Article
+SR 1
+A1 柏丽娟;喻婷
+T1 “这么多年她从未离开，她的精神与我们同在”
+JF 新华日报
+OP T02
+FD 2024-12-13
+PB 新华日报
+LA 中文;
+CN 32-0050
+DS CNKI
+LK https://link.cnki.net/doi/10.28872/n.cnki.nxhrb.2024.009119
+DO 10.28872/n.cnki.nxhrb.2024.009119
+
+RT Dissertation/Thesis
+SR 1
+A1 黄峥嵘
+A3 林泽斐
+PB 福建师范大学
+T1 数字人文视角下名人日记对比挖掘研究
+CL 硕士
+YR 2024
+IS 12
+K1 数字人文;文本挖掘;拉贝日记;魏特琳日记;南京大屠杀
+AB 数字人文作为一个新兴交叉学科领域,为传统人文学科研究提供了全新的视角和工具。《拉贝日记》与《魏特琳日记》是记录南京大屠杀的重要历史文献,使用数字人文技术与方法,对两部日记的内容进行深入对比挖掘,对于还原历史真相、理解历史人物的情感具有重要的学术价值和实践意义。
+本研究立足于数字人文视角,采用文本挖掘、数据可视化、社会网络分析和情感分析等方法,对《拉贝日记》与《魏特琳日记》进行了系统的对比挖掘与分析。首先,通过构建高频词共词图谱和提取TF-IDF关键词,揭示两部日记的核心主题及其演变;其次,运用社会网络分析方法,解析两位作者在特定历史时期的人物关系网络特征及其变化趋势;最后,采用情感分析技术,对日记文本中的情感极性进行提取与分析,探讨两位作者对于不同事件与人物的情感反应及态度变化。
+研究表明,尽管两部日记均以南京大屠杀为背景,但所呈现的主题内容、人物关系网络以及情感表达具有显著的差异。《拉贝日记》更侧重于战争的全局观察与南京安全区的管理,反映了拉贝作为南京安全区国际委员会主席的社会活动与政治交涉;而《魏特琳日记》则聚焦于校园生活与难民所的运营,展现了魏特琳在金陵女子文理学院内部及妇女儿童难民救助工作中的独特视角与情感关怀。此外,两位作者的情感态度,展示了在战争背景下的个体情感的差异性与共通性。
+本研究不仅通过数字人文方法丰富了南京大屠杀的历史研究,同时也可为数字人文视阈下的文献对比挖掘工作提供借鉴。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.27019/d.cnki.gfjsu.2024.002038
+DO 10.27019/d.cnki.gfjsu.2024.002038
+
+RT Journal Article
+SR 1
+A1 黄顺铭;陈昭博
+AD 四川大学文学与新闻学院;
+T1 “有声的我们”：以接力朗读构筑集体身体记忆
+JF 新闻大学
+YR 2024
+IS 05
+vo 
+OP 98-115+121
+K1 南京大屠杀;《魏特琳日记》;朗读;节奏;集体身体记忆
+AB 声音是记忆研究中一个长期被忽视的维度。由侵华日军南京大屠杀遇难同胞纪念馆组织的一次以声音为媒介的南京大屠杀记忆实践——114位男女朗读者接力朗读《魏特琳日记》（中译本），建构出了一幅独特的声音、节奏、集体身体记忆的景象。接力朗读中既存在对节奏的形式化建构，也存在独特的音调节奏。同时，接力朗读中蕴含多种形式的身体节奏，并且这些节奏也是身份的、情感的和感官的。从朗读的角度考察南京大屠杀记忆，有助于深化我们对“声音”“身体”与“集体记忆”之间关系的理解。
+SN 1006-1460
+CN 31-1157/G2
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.20050/j.cnki.xwdx.2024.05.005
+DO 10.20050/j.cnki.xwdx.2024.05.005
+
+RT Journal Article
+SR 1
+A1 周予馨
+AD 厦门外国语学校湖里分校;
+T1 建构与优化：例谈历史课堂教学叙事
+JF 中学历史教学
+YR 2024
+IS 01
+vo 
+OP 67-69
+AB <正>德国历史哲学家约恩·吕森认为“历史是人类意识的叙事性构建”[1]，没有叙事就没有历史。历史课堂同样离不开叙事，历史教师的重要任务就是通过将特定的史事依序纳入一个赋予意义的语言结构并将其延展于有限的教学时间中来实现中学历史的学科价值。因此，教学叙事建构的精度极大影响着学科价值实现的效度。探讨历史教学叙事的建构方法与优化策略实有必要。
+SN 1009-3435
+CN 44-1142/G4
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Ayh1j_hg28bfmoM1xrxqUCFFVF2i5XsoZvhtBxVrGow93_iM5cJgSshHW1MInhaVSP__d9Cb0AkVvS9_xFNVBLODeloQBSabex4QOp-jEsldlLVaXuU8EF-mCXTE3va9eUwj2aPO0f4fmE-n46hSwjU5zFNDJXdWBzT3p9X7x4_nnxJsoeZwsj&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘钰茂
+AD 广西师范大学文学院;
+T1 《拉贝日记》和《魏特琳日记》的见证式书写与身份认同
+JF 唐山师范学院学报
+YR 2023
+IS 05
+vo 45
+OP 42-47
+K1 《拉贝日记》;《魏特琳日记》;见证式书写;身份认同
+AB 作为记录南京大屠杀第一手资料的《拉贝日记》和《魏特琳日记》不同于传统日记完全私人化的叙事伦理，是面向公众作为目标读者的见证文学，在见证式书写过程中强调真实性的同时，遵循了“诗性正义”的道德逻辑。由于两位见证者多重身份认同的差异，《拉贝日记》呈现出了全面化、客观化和理性化的特点，而《魏特琳日记》则充满了对日军暴行的强烈批判和对女性受害群体的强烈关注，体现了她的基督教救赎情怀。
+SN 1009-9115
+CN 13-1301/G
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CsrMK_XuBBYd2H-tsKP7Pb0A7UN7lAmxtOxEDu-4-yMPz4ieybOGu2A8QIFNDgUJK6qOJhVDWmtFuvDpkLX4casY9Cz4Awo_4cdHpiSazQCbqZqKo3UJp7XFt_X7HQAEHlLHoRL-G_GKZ5JtKKAzBbPUEbzHnSjPrFm8ApdCuBiIzZyQpTgA1A&uniplatform=NZKPT&language=CHS
+
+RT Dissertation/Thesis
+SR 1
+A1 黄一乐
+A3 路琦;金美岑
+PB 南京师范大学
+T1 歌剧《拉贝日记》中“魏特琳”咏叹调唱段演绎
+CL 硕士
+YR 2022
+IS 06
+K1 《拉贝日记》;魏特琳;形象塑造;演唱分析
+AB 歌剧《拉贝日记》是由当代作曲家唐建平作曲,游暐之作词,周可编剧,伊莱嘉·莫辛斯基导演的中国原创歌剧,内容取材于德国商人约翰·拉贝在华期间对南京大屠杀中日军暴行的记录。作品从编剧作曲到内涵主旨都具有很强的国际性,无论是从艺术价值还是社会影响的角度来看,都有着深远的意义。“魏特琳”作为剧中的一个重要女性角色,创作者对其进行了立体的人物刻画,咏叹调《我深爱的金陵》、《夜多么绝望》和《孩子,中国不会亡》都是这一角色极具代表性的独唱唱段,具有较高的研究价值。
+本文分为三章进行论述。
+第一章歌剧《拉贝日记》的创作。第一节歌剧《拉贝日记》创作背景,对歌剧创作的时代背景、故事背景的设立、歌剧的框架和情境创设以及思想主题进行阐述。第二节作曲家创作动机,指出该歌剧符合作曲家唐建平一贯注重民族性与时代性的创作理念。第三节女主角“魏特琳”人物分析及脉络梳理,指出“魏特琳”一角在剧情的呈现和推动方面起到至关重要的作用。
+第二章“魏特琳”人物形象的塑造。第一节“魏特琳”形象塑造中戏剧语言的作用,指出创作者通过各具特色的语言和动作,塑造了三首咏叹调中“魏特琳”不同的形象特点。第二节“魏特琳”形象塑造中音乐语言的作用,分析作曲家以设计多元素融合的音乐主题、运用“主导动机”、创建直线型的旋律走向、频繁运用大跳音程这四种手段,塑造出个性丰富的“魏特琳”。
+第三章“魏特琳”咏叹调的演唱分析。前两节就咬字、归韵的把握方面,以及气息的运用方面,举歌曲难点为例进行实例分析。第三节三首咏叹调的情感表达,指出三个唱段分别对于“热爱与坚毅”、“悲痛与无望”、“温暖与激励”的情感侧重。
+笔者希望通过本文的论述,能够为之后歌剧《拉贝日记》“魏特琳”咏叹调演绎的学习者总结出一些可供借鉴的建议。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.27245/d.cnki.gnjsu.2022.002339
+DO 10.27245/d.cnki.gnjsu.2022.002339
+
+RT Journal Article
+SR 1
+A1 张平凡
+AD 南京航空航天大学外国语学院;
+T1 华裔美国文学视角下的南京大屠杀——以哈金的《南京安魂曲》和林永得的《南京大屠杀诗抄》为例
+JF 华文文学
+YR 2021
+IS 02
+vo 
+OP 67-72
+K1 南京大屠杀;华裔美国文学;哈金;林永得
+AB 自1997年华裔美国作家张纯如出版了震惊世界的论著《南京大屠杀—被遗忘的二战浩劫》,近二十年涌现出了以南京大屠杀为题材的多本优秀华裔美国文学作品,体裁覆盖小说、诗歌、戏剧和漫画等,逐步推动南京大屠杀作为全人类记忆文化遗产的研究。以往与南京大屠杀相关的学术研究侧重点大都放在历史史料与政治纷争方面,忽略了文学领域内势头强劲的跨太平洋的大屠杀记忆政治。通过探讨两部影响广泛的华美文学作品——哈金2011年的英文小说《南京安魂曲》和林永得2013年的英文诗歌选集《南京大屠杀诗抄》,来印证大屠杀的创伤记忆正在打破民族国家的壁垒,传播至家国之外的华人群体,并在其寻求身份认同的过程中打下烙印,旨在揭示南京大屠杀在21世纪全球化情境下的记忆危机和文化内涵。
+SN 1006-0677
+CN 44-1183/I
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DFtl3IxwUBP3q9LttPcBOy9BYPzyvfqYsTStpcJzcc6OZ6UvwBmFVXs7RNbQ1MG_4Zhk_4UoAr3rgdRpTMdVJ4eL62MtKciaDeOZlAzMC_RWZzGqR9Mfz2kLzRXrtf91mcZcut3971IqGCnd7YG_K3O1DiZHIdGDwsRzGHJhftrOpNQzx0hzPQ&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 万晓锦
+AD 福建省厦门市厦门实验中学;
+T1 基于历史学科核心素养的史料情境式教学——以“七七事变与全民族抗战”教学为例
+JF 中学历史教学参考
+YR 2020
+IS 04
+vo 
+OP 26-28
+AB <正>初中生对事物的认知处于感性思维为主的阶段,逻辑思维能力相对不足,在历史学习的掌握过程中更偏向于知识的识记,对史料的理解还存在一定的困难。这就要求课堂教学中,教师应把重心放在培养学生形成对历史事实或历史结论的认同上,而不是在史料研读上花费太多的精力。但史料的运用是落实核心素养的重要环节,可以运用一些比较简单且生动的史料,让学生融入史料情境。笔者以"七七事变与全民族抗战"一课教学为例,谈一谈以史料为依托,巧妙设计情境在初中历史教学中
+SN 1002-2198
+CN 61-1036/G4
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DRTRt6DitjAZ31C8t4NeabMkg9CFwEW9bGB2MVP8l6jtVXrh8M_VG46wgGkRdOGQEme7J1YKL8ILPYxG_kAOmo8HF7703d3Rh43gFgyy4DVr5_a7_URHd7QUP6chBeQVOShJvm_mhKh06j9bO2LxF8lqtuDYJq_ydWQ_WBz-zDfFVOkM8ihS1c&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 王成军
+AD 江苏师范大学文学院;
+T1 论《魏特琳日记》的叙事伦理
+JF 名作欣赏
+YR 2018
+IS 30
+vo 
+OP 8-9
+K1 《魏特琳日记》;叙事伦理;见证者发声
+AB 本文着重指出,我们不能仅仅把《魏特琳日记》看作为一般的日记,而要把《魏特琳日记》视为一部历史见证者的在场实录。也就是说,这部名为日记的著作,既是魏特琳自己的心路历程的纪录,更是一部可名为"魏特琳史记"的披露侵华日军南京大屠杀罪恶行径的历史实录。我们之所以强调《魏特琳日记》的信使价值,是因为魏特琳这本日记与一般日记作者的叙事伦理不同。
+SN 1006-0189
+CN 14-1034/I
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BUdo8h-DEy4n8IX25KdA1cBDaKZWjXiD94kiISGJZgV7wokIKvRyhTBQyqKE5gbsHMaVT25dk4DMygIiCWBilgxEfM9FZyGUNSdrA1rX827m_8V-yWK6H5H1EppKY7bqidBTq6662CO7sSjHQP-TUiJGqKIMo358RHqiOsyJW-_AsIEVnRjXCj&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘维荣
+AD 江苏省档案馆;
+T1 见证南京大屠杀暴行的欧美友人档案揭密
+JF 云南档案
+YR 2018
+IS 07
+vo 
+OP 37-44
+AB <正>最早披露南京大屠杀暴行的西方记者1937年11月5日,日军第十军在军舰的掩护下在金山卫登陆;9日,上海中国军队全线撤退。11月29日,日军陷常州、宜兴,并进犯江阴要塞,兵分三路,向南京推进,一批美国记者留在南京城中采访战况。其中活跃的有美联社的麦克丹尼、合众社的爱泼斯坦、《纽约时报》的窦登、《芝加哥日报》的史蒂尔等人。12月上旬,南京城
+SN 1007-9343
+CN 53-1105/G2
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.14074/j.cnki.yunnan.archives.2018.07.033
+DO 10.14074/j.cnki.yunnan.archives.2018.07.033
+
+RT Dissertation/Thesis
+SR 1
+A1 吴一凡
+A3 于平
+PB 南京艺术学院
+T1 试论佟睿睿的舞剧创作
+CL 硕士
+YR 2018
+IS 02
+K1 佟睿睿;舞剧创作;性格刻画
+AB 本文以舞蹈编导佟睿睿的舞剧创作为研究对象,以考察佟睿睿早期小型作品为辅,目的是将佟睿睿的舞剧创作放置在历时性基础上进行综合观察。从舞剧语言形态入手,对佟睿睿迄今为止所创作的五部大型舞剧进行风格类分,旨在探讨中国当代舞剧编导如何以主要人物形象的鲜明刻画为创作优势,以风格的深度改变为前提进行舞剧艺术创作。本文共分为三章,分别为:从中国古典舞起步的中国舞剧创作、佟睿睿舞剧创作的中国题材与舞剧形态、佟睿睿舞剧创作的中国主题与舞剧呈现,以佟睿睿的舞剧创作思想作为切入点,探索佟睿睿在舞剧创作理念中体现的价值追求,通过佟睿睿在舞剧装作中呈现的艺术风格,梳理、总结出佟睿睿的舞剧创作艺术价值。
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Dzsz9108Bt1u_mUNV6kelnRLjUnH3y6HauqV09YR0QbTDGW2wCeuC3w4lag54-_SeMyNUYZUwinqzZl5DkaGl0LzTEw9PauFwO08Z1f4TCnI-fG2wHqxOERI4XsU5R4gUzupduopIk80--SbSKFE9R_s-qiij_s8UDsuhJNPOTU1jRwBPxX1uk&uniplatform=NZKPT&language=CHS
+
+RT Dissertation/Thesis
+SR 1
+A1 徐翔宇
+A3 胡亮;张美林
+PB 扬州大学
+T1 歌剧《拉贝日记》中“魏特琳”唱段的演唱分析
+CL 硕士
+YR 2018
+IS 01
+K1 《拉贝日记》;魏特琳;音乐特点;演唱分析
+AB 歌剧《拉贝日记》是一部为纪念“南京大屠杀”80周年而创作的历史题材作品。歌剧取材于德国友人约翰·拉贝记录南京大屠杀暴行所写的,并由后人整理出版的书籍《拉贝日记》,剧本以民族灾难和人性故事为切入点,对这场人类文明的浩劫进行了艺术化的再现和思考。借助歌剧的艺术处理,就侵华日军在南京的暴行向全世界呼吁—“不忘历史,珍爱和平”。作为一名从事歌剧表演的声乐演员,笔者发现在歌剧的演唱和表演上,除了歌剧演员,许多声乐爱好者、美声唱法的学生等很少有全面了解歌剧文学内容以及认真研读音乐文本的兴趣和习惯。我们不对歌剧作品作全面的了解,一方面等于浅尝辄止,领略不到它更多的价值,另一方面,必然会让表演不够精准甚至谬以千里。所以,笔者作为歌剧《拉贝日记》排练、演出的直接参与者,对该歌剧以及“魏特琳”唱段《我深爱的金陵》为例重新梳理其背景、内容、音乐特点、演唱技巧等,进一步论述如何利用声音、情感,塑造歌剧中的人物角色。使演唱和表演更加有的放矢,游刃有余,呈现出鲜明立体的角色形象。歌剧是一门综合的艺术表现形式,集文学、音乐、美术、舞蹈等于一体,同时它还以音乐和歌唱艺术为核心。无论是直接参与歌剧的创作表演,还是作为一名欣赏者,都要从整体上把握作品。笔者在分析“魏特琳”唱段时,始终在结合歌剧的具体情境,人物的内心状态、情绪情感去思考歌声如何表现音乐。通过本文对“魏特琳”唱段《我深爱的金陵》的具体分析,希望能给热爱这部歌剧及将要演唱这首咏叹调的乐友提供些许帮助和启发。
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CVVtl_JuTZkPAX8zsfBnr0S39BBnxQ-AzmBKg4zqBAFfwmmOdaLNDEtfdn3PEONHXNAQzY66Y47gtVRFySpOmeQ3XimKg7klQJTuAuz-3FKBVY-WR5kLdl-gk2_jZ4L9NVUgpTc5VW0m8bLOupRH8wbeZE1cnINS5cEVu2IiqMIGg8HWBvu_i0&uniplatform=NZKPT&language=CHS
+
+RT Newspaper Article
+SR 1
+T1 南京大屠杀浩劫中的女“拉贝”
+JF 新华日报
+OP 012
+FD 2017-12-08
+PB 新华日报
+LA 中文;
+CN 32-0050
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AEVrVaXv2mbb4Ten8x48Ybu5rzs38FymEqo3kbiUufrqUZHwfaPNcgsc2puRE5pxyxGUYLTqBcSh5hn8ccF783QNZukTf1H07MqS5u_g1DUM-fkB3pDZx1sRxv8FroAwEFzIPiq8UuQF2kP7GQiOfQh45pCUoDSM1FCxoNg06NorvJ4Jtb3al1&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 谢微
+AD 南京出版社;
+T1 中国的《安妮日记》——简评《程瑞芳日记》
+JF 唯实
+YR 2016
+IS 11
+vo 
+OP 92-94
+AB <正>2014年2月27日,全国人大常委会会议决定,将每年12月13日设立为南京大屠杀死难者国家公祭日。此项决定的通过,标志着对南京大屠杀的纪念活动从此上升至国家层面。这不仅是对中华民族一段被侵略历史的沉痛回忆和郑重纪念,也是对日本右翼军国主义复活和挑衅的强有力回击。2015年10月10日,《南京大屠杀档案》被正式列入《世界记忆名录》,而《程瑞芳
+SN 1004-1605
+CN 32-1083/D
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AEVrVaXv2mbb4Ten8x48Yb0PgFcX6xqxgPe_O2MvhwqMBZuyPZ8tLHfNa0aOacaIMLuDP5j43eUDWzKKgP-N1SElpBy6MNbTIFqCb5FG5ZHSRBfRTsUBNnTJ1jjGZhInoRLZ5obCHAF_a_H_-DOOxbUFxVcWsYyzFVk03poh2ohMCGkbdP4H7p&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 李宁
+AD 中国第二历史档案馆史料编辑处;
+T1 哀鸣与反抗:女性主义视角下的《程瑞芳日记》解读
+JF 日本侵华史研究
+YR 2016
+IS 01
+vo 
+OP 34-48
+K1 程瑞芳;日记;女性;日军;南京大屠杀
+AB 《程瑞芳日记》中有耳闻目睹日军大屠杀暴行后的哀鸣,更有对残暴日军进行各种形式的反抗,展示了战争期间女性的命运。作为女性,她有民族主义情感的暗流与爆发,对性暴力与女性贞操的看法,女性特有的理智与情感,知识妇女的职业素养与宗教教育。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.13740/b.cnki.jiiohr.2016.01.005
+DO 10.13740/b.cnki.jiiohr.2016.01.005
+
+RT Journal Article
+SR 1
+A1 沈岚
+AD 中国第二历史档案馆;
+T1 不同女性视野中的战难记录——《程瑞芳日记》与《安妮日记》比较研究
+JF 日本侵华史研究
+YR 2016
+IS 01
+vo 
+OP 21-33
+K1 《程瑞芳日记》;《安妮日记》;日军;南京大屠杀;犹太人
+AB 同为女性战难日记的《程瑞芳日记》与《安妮日记》,都是见证战争与灾难的历史档案,两者固不乏共性,却各有千秋。两位女性作者在许多方面迥异,一个是饱经风霜、见惯生死的六旬老妇,一个则是天真活泼、敏感多思的妙龄少女。两人均兼具女性柔弱、坚韧的品性,悲悯、良善的人文关怀,拥有直面苦难迸发出惊人勇气与超凡毅力的特质。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.13740/b.cnki.jiiohr.2016.01.004
+DO 10.13740/b.cnki.jiiohr.2016.01.004
+
+RT Journal Article
+SR 1
+A1 孙正军
+AD 安徽国际商务职业学院;
+T1 从“史”到“诗”——关于“金陵十三钗”故事
+JF 扬子江评论
+YR 2016
+IS 02
+vo 
+OP 28-34
+AB <正>1937年12月13日,侵华日军攻破南京城,制造了惨绝人寰的"南京大屠杀",约35万平民和放下武器的士兵遭到杀害,8万名妇女被日军强奸,其行为残忍至极。"南京大屠杀"与"纳粹屠犹"一样,同为"二战"史上的两场浩劫。在欧美,半个多世纪以来,一批具有世界性影响的思想家,如雅斯贝尔斯、汉娜·阿伦特、特奥多·阿多诺、齐格蒙特·鲍曼等,围绕"纳粹屠犹"开展了持续深入的研究。与此同时,产生了《奥斯维辛的爱情》《辛德勒的名单》《美丽人生》《朗读者》等一批关于"纳粹屠犹"的文艺作品。进而,"欧洲的‘屠犹’逐渐上升到‘二战’历史叙述的中心位置,即‘屠犹’已经形成为一个世界性
+SN 1009-542X
+CN 32-1787/I
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AeQOVQqCZ5V1iElKE_jBSyL464DVT6Nz3VS-dRjWjWWf9Uc6MkB8L7XC38_IiyJ-AfvBvI0ecNenPgMMKPyHS5Rgh1c5wFjMJar1FMrbpYIQGLqY4tgkeyRvTimuoL6zZPltP0SKg6W-PNWgyVZ_59MfdfYHNTOIv4L-5XyoN1jbJ8kTcaRTku&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 蒋梦婷
+AD 扬州大学社会发展学院;
+T1 南京沦陷初期安全区里的生存困境——以金陵女子文理学院难民营为例
+JF 文教资料
+YR 2016
+IS 12
+vo 
+OP 81-83
+K1 沦陷初期;安全区;金陵女子文理学院;难民营
+AB 南京沦陷时期,日军最广为人知的暴行是南京大屠杀。本文着眼于大屠杀背景下安全区的日常生活,简要分析金陵女子文理学院难民营面临的生存问题,主要表现为食宿、卫生医疗上的困境,从而管窥沦陷初期安全区难民生存的状况和承受的深重苦难。
+SN 1004-8359
+CN 32-1032/C
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CVOlrEynEVm3W9oKnX3Ra4_9h5T0bqUarOotsFlNoZQ0rP7QPZsc-pQ_govIRWR0kjnVZSRY2MZK6G6Hcq_9wCbIn1EcuMVv1Hj_QPV_Pa1jWchrTbrysadHJUJUjRrkAm7_jhNKiXou9J73ekDq-rtgZaRZGiPMj07WpvTm3MB0eme_vupmA1&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张小雪
+AD 河北大学历史学院;
+T1 金陵永生——魏特琳在南京
+JF 黑河学刊
+YR 2016
+IS 02
+vo 
+OP 78-79
+K1 魏特琳;金陵女子大学;南京大屠杀;《魏特琳日记》
+AB 明妮·魏特琳,是一位美国女传教士,在中国南京大屠杀中拯救了数以万计的中国人,被国人亲切的称为"活菩萨"。现主要从魏特琳的生平、魏特琳与金陵女子大学、南京大屠杀中的魏特琳这三个方面对其进行了讲述,以期每个人熟知铭记被国人称为中国的"辛德勒"的魏特琳。
+SN 1009-3036
+CN 23-1120/C
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.14054/j.cnki.cn23-1120/c.2016.02.037
+DO 10.14054/j.cnki.cn23-1120/c.2016.02.037
+
+RT Journal Article
+SR 1
+A1 徐志耕
+T1 历史记实首当真实——简评《南京大屠杀全记实》
+JF 扬子江评论
+YR 2015
+IS 05
+vo 
+OP 72-76
+AB <正>善于写作高境界、大题材、全记实的中国作家协会副主席、中国报告文学学会会长何建明轰轰烈烈地推出了他的《南京大屠杀全记实》。据他说,这本书"各种媒体纷纷转载连载,30万册图书处在脱销之中,数以千万的网民争相阅读"。他又说,"尤其是作品中十问国人的内容,不仅对中国人是一种强烈的警示,而且对整个世界纪念反法西斯战争胜利70周年、思考人类和平的未来方面都具有重要意义"。
+SN 1009-542X
+CN 32-1787/I
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AvrDEJPEzfYc2QnnhcYatm0R5ljGZ2HPSOV-lkanZoTHiLGvgFv3X4e38R0ahSE2a3xhqN0tw2YWZCxHkKbl7w1tipIArWKnaFx5wiOeV5dx7rRq4Qtupjuz8-vBOT13s5zl1igIDZsjp8e0MLQ_GtrxJlJ-l7Rhy9wUmMIPf-pBr8k0-7geg4&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 吴星铎;张祚祺
+T1 翻开魏特琳的日记
+JF 国际人才交流
+YR 2015
+IS 09
+vo 
+OP 15-17
+AB <正>"魏特琳曾有多次机会离开南京,回到美国,为什么她不走?"怀着这个疑问,于中美翻开了魏特琳写于1937年的日记。一头棕色长发、有着一双黑溜溜大眼睛的于中美是来自美国的留学生,现在就读于北京师范大学。她1998年开始学习汉语,喜欢舞蹈和主持。父母从事国际教育工作。他们给她起名于中美,是希望她将来从事中美文化交流工作。于中美参加了中央电视台中文国际频道的2015"汉语桥"《我与中国第一次亲密接触》节目,在这档大型互动节目中,来自全球15个国家的16位留学生将深入
+SN 1001-0114
+CN 11-2642/C
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AvrDEJPEzfYc2QnnhcYatm0R5ljGZ2HPTi_DYR4A5SM323FlBmtwH2h7z5G6KWa2_mW7jTmFSzUbiwgSECVc6pXQ1WzxSgVvKCUU02i-DbBv_r2x4nyfmzExp8xENjulkFYN2b9u68Qx_tf2ivi4TwLPz5sO0YR_l9NRXZXaMmqAxXW-S2JebO&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 齐春风
+AD 南京师范大学社会发展学院;
+T1 沦陷时期南京的粮食供应
+JF 中国农史
+YR 2014
+IS 06
+vo 33
+OP 57-65
+K1 沦陷时期;南京;粮食供应
+AB 南京沦陷后的大部分时间里,民众的生活极为困苦,粮食供应紧张为其基本特征。1938年,由于日军没有收紧对南京的粮食控制,粮食供应尚显平稳。从1939年开始,日军限制粮食自由流动,实行许可证制度,1942年开始又实行计口售粮制度,南京市民的粮食供应被极度压低,人民的生活困苦不堪。
+SN 1000-4459
+CN 32-1061/S
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DHQED-p4t-kGQf9F7DqtlrybrQww1pha2fsIqJtg1QsTcCBc3oGPKMJGSFos9OARksCmWFxSkW0CPo8aOewyvVVFnfAXafRg4VSMi11fzvU2_wa766tABkFFx5320bOZZD-fUglM9F7-bu6KGAe1KATfilyGIcctn8KB_z6Iuja00XQeq7JHHq&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 吴卫华
+AD 三峡大学文学与传媒学院;
+T1 《金陵十三钗》:史实依据与价值观刍议
+JF 当代文坛
+YR 2013
+IS 06
+vo 
+OP 76-79
+K1 《金陵十三钗》;史实依据;价值观
+AB 本文从具体的史料出发,对《金陵十三钗》小说及电影的史实依据予以了质疑和辨析,梳理了不同时期相关文本之间的源流和关联,从多维角度对电影《金陵十三钗》在价值取向上的迷失与误区进行了审视。
+SN 1006-0820
+CN 51-1076/I
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.19290/j.cnki.51-1076/i.2013.06.019
+DO 10.19290/j.cnki.51-1076/i.2013.06.019
+
+RT Journal Article
+SR 1
+A1 高峰
+AD 中国城市经济文化研究会;
+T1 她用日记记录了南京大屠杀
+JF 百年潮
+YR 2013
+IS 10
+vo 
+OP 47-49
+AB <正>在电影《拉贝日记》中有她的影子;在哈金的小说《南京安魂曲》中有对她的描写;在陆川导演的电影《南京!南京!》中,有她正义的呐喊;电影《金陵十三钗》中,风月女子们危难时刻挺身救士兵的感人故事,真正幕后导演是她;她用滴血的笔记录了1937年南京大屠杀中日军的暴行;南京大屠杀期间,她把金陵女大改成难民收容所,挽救了上万条中国人的性命。在那血雨腥风的时刻,她是当时全南京城难民心中的"观音菩萨"、"神的使者"。在
+SN 1007-4295
+CN 11-3844/D
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.16624/j.cnki.11-3844/d.2013.10.015
+DO 10.16624/j.cnki.11-3844/d.2013.10.015
+
+RT Journal Article
+SR 1
+T1 《南京大屠杀史研究与文献系列丛书》第30卷等新书在宁首发
+JF 日本侵华史研究
+YR 2013
+IS 01
+vo 1
+OP 124
+AB <正>2012年12月10日,侵华日军南京大屠杀遇难同胞纪念馆和侵华日军南京大屠杀史研究会联合举办"新书首发式",发布了由南京出版社出版的4部新书。分别是:美国内布拉斯加大学陆束屏教授翻译和编撰的《腥雨血雨话金陵——明妮·魏特琳1937-1938年日记、书信和电文》;《南京大屠杀史
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-C4PtKwXo98iCe7Z-cGQMGK84eTfJ1ZXhul8bFJSGYcQ3-7oKxoz52p4b8a4Y2Xha2G_ogDPSC-Vz2yBD4LEKmqY2z9S3-zJW8iHai4l3z5OxQtsRHKKX_0hbBZahR20_Y3lHHwlNGoLmQMYgHmURJtSY1_6raxa4xJNeosMKzEAw==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 朱成山
+AD 侵华日军南京大屠杀遇难同胞纪念馆;
+T1 南京大屠杀系列研究丛书中的奇葩——评《腥风血雨话金陵》
+JF 日本侵华史研究
+YR 2013
+IS 01
+vo 1
+OP 125-126
+AB <正>由于工作关系的缘故,20年来,我曾经接待过许多位南京大屠杀幸存者和一些南京大屠杀遇难者的遗属,其中很多人在历史回忆中都提到明妮·魏特琳的中文名字——华群,亲切地称她为华小姐。正因为如此,在侵华日军南京大屠杀遇难同胞纪念馆现有的史料陈列厅内,一共只有三尊历史人物的雕像,魏特琳女士的雕像成为其中之一。魏特琳女
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.13740/b.cnki.jiiohr.2013.01.015
+DO 10.13740/b.cnki.jiiohr.2013.01.015
+
+RT Journal Article
+SR 1
+A1 陆束屏
+AD 美国内布拉斯加大学;
+T1 明妮·魏特琳与她的《金陵日记》
+JF 南京大屠杀史研究
+YR 2012
+IS 03
+vo 
+OP 78-98
+K1 明妮·魏特琳;《金陵日记》;南京大屠杀
+AB 1919年至1940年,明妮·魏特琳在南京的金陵女子文理学院度过了21年教书与担任行政管理工作的生涯。在日军侵占南京期间,她敞开学院大门,收容数以万计的妇女儿童,并每天坚持记日记,给后人留下弥足珍贵的第一手资料。这些日记在记载日常工作、生活细节、周围发生的大小事件的过程中,真实地再现当时南京城内,特别是金陵女子文理学院校园里的情况,客观地描述了日军的所作所为,屠杀百姓的惨状,强奸妇女的恶劣行径,以及她本人身临其境的感受,她的内心世界和她尽力为保护妇女难民所作的种种努力。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.13740/b.cnki.jiiohr.2012.03.016
+DO 10.13740/b.cnki.jiiohr.2012.03.016
+
+RT Journal Article
+SR 1
+T1 “金陵十三钗”的历史之痛
+JF 课外阅读
+YR 2012
+IS 09
+vo 
+OP 30-32
+AB <正>"不能在这个时候抛开中国"1886年9月27日,明妮·魏特琳出生于美国伊利诺伊州的西科尔小镇。1912年,她在安徽从事女学教育,7年后应金陵女子文理学院之聘,担任教育学系主任兼教导主任,到1937年时,魏特琳已做上了整个学院的教务长。平时,学生及校友们都习惯称她"华小姐"。
+SN 1009-9514
+CN 11-4602/G4
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DWGDDRwDqJXby2QLcHrVgBPAqWG2Muskk_xoKDxikL49OLKFe2H2jCg-fwbqg0Pee0AtRoJ2SD_vHhsZjQGlDWLoZv71pls7nVyBf1Hsiwqj55r8Mft0FBmUN6bwamV2UfdXwdy9iaROqDRM-zCA-MFl75oCPusUJTeNNOmDsLew==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 陆束屏;王山峰
+AD 美国内布拉斯加大学;侵华日军南京大屠杀遇难同胞纪念馆;
+T1 明妮·魏特琳与血腥恐怖中的金女大难民营
+JF 南京大屠杀史研究
+YR 2012
+IS 01
+vo 
+OP 90-102
+K1 明妮·魏特琳;南京大屠杀;金陵女子文理学院;难民营
+AB 1937年夏天,第二次中日战争爆发,日军沿长江下游向南京进发过程中犯下了一系列暴行,这些肆意屠杀、强奸、抢劫和纵火的暴行在南京陷落之后达到顶峰。美国传教士和教育工作者明妮·魏特琳留在了陷都南京,以极大的勇气英勇地面对了这场大屠杀。她将金陵女子文理学院的校园改作难民营,为一万多名饱受惊吓的妇女和儿童提供住所、食物,给她们以安全保护。她努力工作,不屈不挠,常置自身的安全于不顾。她在血腥恐怖之中展露的非凡勇气使人们在她悲伤地离世之后永远记住这位南京大屠杀时期的观音菩萨。
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.13740/b.cnki.jiiohr.2012.01.012
+DO 10.13740/b.cnki.jiiohr.2012.01.012
+
+RT Journal Article
+SR 1
+A1 张生
+AD 南京大学历史系;
+T1 南京大屠杀受害者PTSD初步研究
+JF 抗日战争研究
+YR 2009
+IS 04
+vo 
+OP 23-32
+K1 南京大屠杀;受害者;PTSD
+AB 对于战争造成的"软性","隐性"伤害,第二次世界大战时即引起关注,现在国际学术界用正式定义的PTSD加以概括。南京大屠杀期间,日军营造的极度恐怖环境,是受害者PTSD广泛产生的客观环境。受害者的PTSD症侯、表现为因惊恐而失去行动能力、精神失常陷于歇斯底里状态,失忆,情绪失控、自杀等。美国籍受害者魏特琳、虽曾企图通过宗教来拯救自己,但最终被PTSD击垮。初步研究表明,PTSD存在于涉及南京大屠杀的中外人群之中,其影响从当时延续到现在。
+SN 1002-9575
+CN 11-2890/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Bt-7ivX4oNLl_fq261W-ygt3wa4c7O9etJjxsVnTsNTlxwRdu_Ij9Mm6WK3iYbVOVcLoZ1SaLiMDQzfRCTPBXDfGiQX0ZWrs1xiV8ZvhKolpssBLBx0nVuZSdiCAJepNEXSwPx6ZCPRTmlEB9sfJFpCttiN5_p_k1nVI23-8vpSw==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 朱宝琴
+AD 南京大学中华民国史研究中心 教授、博士生导师邮编:210093
+T1 浅谈运用心理史学研究魏特琳——读《魏特琳日记》
+JF 民国档案
+YR 2008
+IS 02
+vo 
+OP 130-134
+K1 心理史学;魏特琳;控诉战争
+AB 《魏特琳日记》是一部反映侵华日军南京大屠杀真相的珍贵资料,运用心理史学的方法研究魏特琳女士在南京大屠杀期间救助难民的壮举,不仅可以说明魏特琳早期生活经历与其行为动机的因果关系,而且有助于理解基督教义职业化需要和对弱势群体深切的关注和支持,促使魏特琳自觉地确定了留在沦陷区——南京的选择,并克服了各种困难为实现拯救难民的预定目标而无私奉献和努力,揭示了潜意识对魏特琳意志活动的作用。魏特琳的不幸逝世,是对直面日军残酷的非人道行为的控诉。
+SN 1000-4491
+CN 32-1012/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Bt-7ivX4oNLl_fq261W-ygt3wa4c7O9etZoDRKlkkPcBJ6lHDe7CNAfAtJm6ZOX7FuvVd1FJHUflVdIiXuNfzvWCUYy7MqD5LRlJzhZsqUwf5xaf1SknfOZd7_bGD8Ori3bKE0ugn-As3uFbWCdlYiD65PWpI7jLeGkwPLB_8G4A==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张卫波
+T1 近十年“侵华日军南京大屠杀”研究述评
+JF 中共党史资料
+YR 2006
+IS 03
+OP 188-197
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DQW11ZJfxKN8K_sznAY2cFgGi21SYnzxv673GihlNkglrrQyW1wwB4wdyD_uxHKcFNvgiRhICl2xI0sNgWrJkfzAIWyXaQOykH2wosH7aKfOODgLeUIfXoM95-xlHbfG_wFFf6BLm1WudywY6S1MCFi4zOCKiyR6dSrRUGBqsFYQ==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+T1 1938年:中国苦难春节
+JF 广西党史
+YR 2006
+IS 02
+OP 34-35
+AB 1938年元旦,是日本的新年。这一天,攻陷南京的侵华日军举行了各种庆祝活动。率先攻进中华门的几个坦克兵在装扮他们的坦克,晚上,他们走上街头庆祝。此时,遭遇大屠杀的南京城已是死一般的沉寂,而日本兵却在努力营造祥和的过年气氛。为立起日本过年时的“门松”,士兵们特意从郊外运来了松树;部队的厨房在打制年糕,新年物品包括橘子、海带、鱿鱼干、大酱等食品也大量运到。在军队新年年会上,士兵们高呼“:天皇陛下万岁、万岁、万岁!”20多天后,25岁的日军第十六师团上等兵东史郎,乘船离开南京,他将随部队开赴新的战场。在日记中,他这样写到:“扬子江河岸上堆满了如山般的、像畜生一样被屠杀的敌兵尸体,这些尸体已经变成了黑色,像被充满了空气似地肿胀起来;这些尸体一踩上去,如烂泥般恶臭的内脏就会流出来。士兵们就是踩着这些尸体跳上船去的。”几天后,是中国新年,即农历戊寅年春节。这是开战后的第一个春节。在《魏特琳日记》中,我们可以看到中国人在国破家亡中如何度过了1938年的春节。以下摘录的是1938年春节魏特琳的见闻。
+SN 1007-4481
+CN 45-1218/D
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Dg0eywp_2nCTSxJu54joiHeDVF2_dQTbGAOODg4rEhmI7KrE9H8lpNtvKbdyipyFSi_YOgIsKEnfREiSEIbDoD4g3EOWUlB1bJbyDmGCJ8-lTd0Io0u-D_o5u1yGQDCQ2IyKOZPPG3lAv-PP1JPNa0iEvAyi-tZznx0T1jUDbPVg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 严海建;冷友伟
+AD 南京师范大学,南京师范大学 南京210046,南京210046
+T1 日军占领时期南京地区的教会大学
+JF 辽宁行政学院学报
+YR 2006
+IS 01
+OP 89-90
+K1 教会大学;安全区;特种教育;难民救济;主要损失
+AB 在日军占领南京时期,由于教会大学的特殊背景,所以金陵大学和金陵女子大学在南京的留守机构和人员一直到1942年6月19日,也就是太平洋战争爆发后,日本人接管之前,基本上保持很大的独立性。这种独立性使这两所教会大学能够从事很多特殊的活动,比如对难民的救济、保护、教育等活动,本文简单讲述这一时期南京地区的这两所教会大学的主要活动,以及主要的损失情况。希望这对我们了解日本占领时期那个特殊的环境中南京的教会大学的基本情况有一定帮助。
+SN 1008-4053
+CN 21-1405/D
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DcjPUGRUFyOv7CbHzmn5pkf1XXcpMbMQyH6Fsif2goa6dFwbz3gv_nq_LGO88oiA9uQV3X4h1B_hnnuFDcON0A69XbNqFrDhApQVNKw3K0VcGfpU3BiZI5FAUIxMJlEQkwhBUyW3vXswDsWQTxks9DbjLeD7SDOF64845YDWkp_A==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 王卫星
+AD 江苏省社会科学院历史研究所 研究员 邮编:210013
+T1 论南京国际安全区的成立
+JF 民国档案
+YR 2005
+IS 04
+OP 103-110
+K1 南京大屠杀;国际安全区;外国传教士
+AB 1937年南京沦陷前期,留在南京的一些外国人士,不顾个人安危,毅然决定留在南京,并参照法国神甫饶家驹在上海设立南市难民区的成功经验,发起设立了南京国际安全区,以保护无辜的平民免遭战火的蹂躏。安全区设立的过程较为复杂,不仅需要中国方面的同意,而且还要征得日军当局的认可。这些外国人士克服重重困难,终于在南京沦陷前成立了安全区,开始发挥保护平民的作用。
+SN 1000-4491
+CN 32-1012/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-ANBM5Qzv2UM2328wjUYXRm1k2_iytwf-sl0CGQ6Piu8cW56e3SqWpIE5HyHOTxC4b0zjhYQ5kYWeP7Yj42TVpYNYkrQzFYq8XuMl1ZiUAm5tPadAA0Wkkizh8OehYXU-SvLvIPOQkLt80GaagvdDYcb4c0IDDXW2je24XKV8rV5Q==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 汨罗
+T1 两本日记
+JF 共产党员
+YR 2005
+IS 05
+OP 57
+AB <正>60年前,侵华日军制造的南京大屠杀惨案,是日本法西斯在中国所犯严重罪行之一,是中国现代史上极其惨痛的一页。虽然日本当时当权者和以后当权者中的许多人竭力否认有这样的惨案,企图隐瞒事实真相, 但事实就是事实,不断有身经这个惨案的人提供了揭露惨案真相的材料。最近,江苏人民出版社和江苏教育出版社共同翻译出版了《拉贝日记》。这是当年在南京的一名德国友人亲身目击南京大屠杀所作的真实记录。这本书的作者约翰·拉贝(John H.D. Rabe)于1882年出生于德国汉堡。1937年
+SN 0451-0607
+CN 21-1002/D
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Cqqp9BJCBY2GyP0g2ZYsjdzLFiTmWjCbmnukwOn0dL09SoigbofEf5KgVNwN5tN-sdYpYd-cZQr7hkR8oNcvzW6Zk7g0Md_WRlky5epcvAl3DOjwSLpKp22kt_S3zxwqiexmFY5KPJIsg5zN-l38eBI2yfD_cQtAk-LcVfgm8zIA==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 管辉,郭必强
+T1 一份中国人亲历的日军南京大屠杀记录
+JF 档案
+YR 2005
+IS 01
+OP 20-22
+SN 1004-2733
+CN 62-1025/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-B0-9k_sX7Y-UQiYoZ_meS2nzKMbbUeS-QrdnqnvEoiepreZl6zCBrDlJWWiNQnzO9Cn6RnMcRnhXOXFFWfA9UN6gz5m4JF0h3xFrWqbhBaUEoxPNcvMP9JXsxaRtaMevoYvvjbw08wwbIxLnNKozfCl62LDKVUM_IMWzj7b68fCg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 郭必强,管辉
+AD 中国第二历史档案馆,中国第二历史档案馆 江苏南京210016,江苏南京210016
+T1 程瑞芳:用日记记录南京大屠杀
+JF 档案与建设
+YR 2005
+IS 01
+OP 33-36+29-32
+SN 1003-7098
+CN 32-1085/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AgRSDnYgUKeFnRuXIAlR-gSfHQ03EgFHrldSnNRZ4X24vGhAyga61EBf335oQ1O9j_tVnmzQsuF0XP__Nr0xnRBn0XXPrClX1VCvYwf6T0ph1djtxySbk22XXB1ujRs1399QRo532HAuGIQOeu4Wc8zRgdPYwZWpINw7cZM7Ethw==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘维荣
+AD 江苏省档案馆 江苏南京210008
+T1 南京大屠杀亲历档案——魏特琳(华群)日记
+JF 山西档案
+YR 2004
+IS 06
+OP 48-50
+K1 南京大屠杀;亲历;魏特琳;日记
+SN 1005-9652
+CN 14-1162/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-A1YKSXbvcOaWruNG-uza1ckCYLAckVcMJD8Ykbw-Gybw6NkDAFYpxG27TxzFUGEXUOoc0BoINsjv98XvQHrjiszJAfKVgDRlEYHmMOEPcpA_ssPCGuQVsEt-VYJLE844vhcmqnVXA8CN-no_LLITxKPSuRvYSoKtTEQsnbqRPe1A==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张连红
+T1 历史无法忘却:张纯如与她的《南京大屠杀》
+JF 钟山风雨
+YR 2004
+IS 06
+OP 4-7
+SN 1009-9077
+CN 32-1623/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-A1YKSXbvcOaWruNG-uza1ckCYLAckVcMLEUORJd8pf36GDgr2Ja6EtaXqku3SW1rERPAEMnvhv7kMufwP-3p9xEozOb3QjvgJZCBkh8AgYMaQ8WY-G7ZvD40i36OYiAU5QlnSE_Klt4CmzRZuw3fkkyuXtNU7lK6v37fxzb9n-0w==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 管辉,郭必强
+AD 中国第二历史档案馆,中国第二历史档案馆 副研究馆员210016,研究馆员
+T1 程瑞芳日记考释
+JF 民国档案
+YR 2004
+IS 04
+OP 132-135
+K1 程瑞芳;南京大屠杀;日记;安全区;研究
+AB 《程瑞芳日记》是首次发现的中国人以亲历、亲见、亲闻记录下的侵华日军南京大屠杀日记。与以往公布与出版的中国人所写日记体回忆录不同 ,《程瑞芳日记》逐日所记叙的是作者亲眼所见的日军对金陵女大安全区烧杀奸抢的暴行 ,以及她在日军南京大屠杀期间的心路历程。本文所作考释是对《程瑞芳日记》及其作者的研究成果。
+SN 1000-4491
+CN 32-1012/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-A85i9xW5HJdIzq8bBKwJyR0SMCgehnS6TU0sB16o86VxUNSGjFUUy_6GhtfmcZw17exPEbZ-BPF3bARijBeR20leeluBUHyljT8lmdDsaitAkDZhJH_tigXQIJsgvGIfpYV0pusSjkD2WPH_AWmxZk5RJR9EJo3y6S6fNdg8MS3Q==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘维荣
+AD 江苏省档案馆
+T1 真相:从魏特琳日记档案看南京大屠杀
+JF 档案天地
+YR 2004
+IS 06
+OP 16-18
+SN 1006-2459
+CN 13-1184/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CNQpvJgqOQH-xsf4PZlTSsxIQrhcIDsYsNsw17ClaOiUqLCEJIDWBUwFZ7PNWhfm-HSis7ePiDlcCn5_r3zNX7nAXBP2MhMYJDyPE2NONVQQ7YDvk6eq2J0Y0uXXTmdoerl9SRzZ7BSJxShwDFfKVenlLwkzo-qGV1FPjK6G0wPQ==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘维荣
+T1 魏特琳见证南京大屠杀
+JF 百年潮
+YR 2004
+IS 01
+OP 55-57
+AB <正> 《魏特琳日记》是继《拉贝日记》、《东史郎日记》后,又一部反映侵华日军南京大屠杀真相的原始档案材料。拉贝是一位德国人,其日记以保持原始档案史料价值见长;东史郎是一位原日本士兵,是作为加害者一方的日记;而魏特琳则作为一位美国女教授、南京大屠杀的亲历者和南京女性难民心目中的“活菩萨”,其个人亲历日记具有其他档案资料不
+SN 1007-4295
+CN 11-3844/D
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.16624/j.cnki.11-3844/d.2004.01.010
+DO 10.16624/j.cnki.11-3844/d.2004.01.010
+
+RT Journal Article
+SR 1
+A1 夏蓓
+AD 本刊江苏通讯员
+T1 牢记永远的伤痛
+JF 中国档案
+YR 2002
+IS 07
+OP 54-56
+SN 1007-5054
+CN 11-3357/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CIjEpFuI7o-nwuSnv666vGMCHx3JUhte8G0V-7vrmuXhrYhVUh-OlGoba1QXf81odILJ_6_Xg55tOkZDf2ksozSHjtsR5GwF30UAZ8ytzqz_NgPkQDPALs5MqWVVOB5jQoWt6SzJHttMTGp15oyjJ1X1KS3N_ePDOf6bcdO4XPpg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+T1 名人与日记
+JF 青少年日记
+YR 2002
+IS 01
+vo 
+OP 24-25
+AB <正>黎锦熙是湖南第一师范教师,他的日记中有这样一段:"一九一五年四月四日星期日。上午润芝(毛主席字——注)来,阅其日记,告以读书方法……""七月三十一日星期六。晚,在润芝处
+SN 1004-1079
+CN 14-1025/C
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DviW3m8y6yWScCQe8oDZ6ceoin5jbQwOlnZ5qpeJ2pbZyjdso55bBP_3o9GtNTPTBNZ4S_OcX-ZRicgZ9ktwks7h6m6CT4wudHIbkndytdgcUaT5A68heLixNZwGrCEivhoxJSa9pT5lGf7oAU992niUjERKttNK_axoknDu9n7Q==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 刘维荣,林挺
+AD 江苏省档案馆征编部,江苏省档案馆征编部东南大学建筑所 南京210008,东南大学建筑所 南京210008
+T1 南京大屠杀亲历档案──魏特琳日记
+JF 档案
+YR 2001
+IS 06
+OP 16-17
+SN 1004-2733
+CN 62-1025/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DviW3m8y6yWScCQe8oDZ6cLuqDSINvD8o8MQKHTpu4q3t3VtangNvsQbL-hn20Jnztbijruylmzr16l4mv-AoAduGjK1n99yi0NqYEs1YfG8paX64ayJiZJht228JOhdBZCRRGTuCQXh5uV-TAwJrwv_GqonYnGfkfhOJ5kqW_1Q==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张连红
+T1 侵华日军在金女大的性暴行
+JF 钟山风雨
+YR 2001
+IS 06
+OP 15-18
+AB <正> 在侵华日军南京大屠杀期间,位于南京国际安全区内的金陵女子大学是当时专门收容年轻妇女的难民所。金陵女子大学是由美国教会建立的中国第一所女子大学,1930年金陵女子大学改称金陵女子文理学院,但人们习惯上仍称其为女子大学。校园建筑设计古典优雅,享有“东方最美丽的校园”称号。但是,在63年前,侵华日军攻占南京之时,这所神圣美丽的校园却成了日军野蛮实施性暴力的重要场所。
+SN 1009-9077
+CN 32-1623/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DviW3m8y6yWScCQe8oDZ6cLuqDSINvD8o-4GEQQgEr0D6s0t-u8EHJbUVNc6Q6MXcQGiVvSn3INWfS1E91opXprftD0CiztttuaqZ-hawlDcDB_Mwl2fLu8B8lvZ7u0X0IzHpQB4SU35Jg2ui3c61nZkdKs1UtBQGZt63x882wpA==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 吴元康
+AD 安徽省社科院历史所!安徽合肥230053
+T1 一部震撼心灵的传记——评《魏特琳传》
+JF 安徽史学
+YR 2001
+IS 03
+OP 96-83
+K1 魏特琳;传记;南京大屠杀
+AB 南京大屠杀时期 ,美国女传教士魏特琳不仅挺身而出 ,充当中国妇女的保护神 ,而且作为历史见证人 ,为后人留下了一部弥足珍贵的日记。全面评述她的一生 ,肯定其对中国人民所作出的卓越贡献 ,既丰富了历史研究的内容 ,又有助于人们加深对日本军国主义危害的认识 ,因而具有一定的现实意义。
+SN 1005-605X
+CN 34-1008/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CXp1rfdA6oVjJQN9-SuARJVHJ-nh5lYY7OR5jp1jHKV_yLGRhVfH5VNmr8rXYt7DXWVTybZZDTKUsXSQLI3BSzqgTULGq0IjQc9pK1AGMiTLcAcvOVA2isig8baGnuyxClQmTjx1m29eGMRAPymVs1Fuzp6LtFyFNvfwbWrZ_1xA==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 许书宏,张连红
+AD 南京师范大学南京大屠杀研究中心,南京师范大学南京大屠杀研究中心
+T1 “纪念魏特琳逝世60周年暨南京大屠杀国际学术研讨会”综述
+JF 抗日战争研究
+YR 2001
+IS 02
+OP 248-253
+SN 1002-9575
+CN 11-2890/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-CXp1rfdA6oVjJQN9-SuARJVHJ-nh5lYY66h4-9qTNvBV3pnEHB-r1UstbhsgsEBG_UfXfNvjvNt3TWjpE5BFDd3QeKiZG_qQl6DzYJySq_wz8jsbwRftcxLPlGZ1ILBAvW3kLsrZ8b4oY8QpOntiylTJC_zIVQZ_6wGSsGSxydjQ==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张宗刚
+T1 “女拉贝”的风采──读《魏特琳日记》
+JF 中国图书评论
+YR 2001
+IS 03
+OP 55-56
+SN 1002-235X
+CN 21-1035/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-ALvAAhoG-c1PSTK13DQt8V5P9JDEi3bQgodAZsCDSOiaQFzDsnLhVsB5hgzNSdbq5GyL9OnN4fbCjz1Zc_Lk4f77AgsAsWlaSfyb-SZtBLMU0T9PKnLSPR0e0VJkBtd8IN83Np_RkP5ZdsvKN3kg6-_BjtRIy_b8BE2CLymaTpxg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张连红
+AD 南京师范大学历史系
+T1 在南京的日日夜夜——《魏特琳日记》评介
+JF 抗日战争研究
+YR 2000
+IS 04
+OP 218-223
+SN 1002-9575
+CN 11-2890/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-ALvAAhoG-c1PSTK13DQt8V5P9JDEi3bQiPL0wghfzxaAB66JrMmWfASzHI7kokd0OL1TJvghhvseXXzymW25yEzSEw1MIwEZXW8u1YPOpKVI_ozQQ0qwe-FdYOZpQ8LNjj137GcfzSUoIlmp6eDS_MHIKtlO-jmYRe_Hb2xCXKdw==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 何民胜
+T1 魏特琳及其日记
+JF 出版广角
+YR 2000
+IS 12
+OP 52-54
+AB <正> 尘封了六十多年的《魏特琳日记》,今天终于以全貌与中国的读者见面了。作为这部警世之作的责任编辑,编完书稿后,我的心久久不能平静,为作者对中国人民的友谊和深情所感动,为作者的人道主义精神和无畏的气概所折服。因此,总想写点什么,以缅怀这位英雄的战士。中国就是她的“家”
+SN 1006-7000
+CN 45-1216/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-ALvAAhoG-c1PSTK13DQt8V5P9JDEi3bQgvXFTsc77BUKULBNLA2Rriarik176K9IFefteCVQ4p_D3YWrswlKaQJAobue-oO2s_NoEY3Th1aPOaUFdZ9L6RD-WcmxqrWEm5Tf5t4QEPNzuXVZLp9wQ3sz0Km5MMFA_o27MBxTwXkQ==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 平涛
+T1 《魏特琳传》──一部揭示侵华日军南京大屠杀兽行的力作
+JF 紫金岁月
+YR 2000
+IS Z2
+OP 91-92
+SN 1004-5430
+CN 32-1024/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AyEiSKsBOaMU7cmHtUFkuT5I3FYhI86HZjbYmIS_kivdTPhzFHMAWlP92xvZktsQd6OrUBigv2K43_459j6hs-XNqgJy0huTrTx9g7_Mq6Bhqxu7AKGJEOeZGNVO13IwR61cK1c95VFoGEkfd2BDEN8Ioq19uwzD8VAkzzj2Eesg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 王卫星
+T1 魏特琳和她的日记
+JF 民国春秋
+YR 2000
+IS 06
+OP 47-49
+CN 32-1102
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-AyEiSKsBOaMU7cmHtUFkuT5I3FYhI86HZiB71emDND_wSpMI0uj2HRWwZEZd2rTCUOGeGf0NMVua8_RX6VaafIJwKHL9E2yA3hZIkCUP60OW0CxXJI7HWGrrrH4vBHmFfrAy8YoUSxJRoYWFkGtFL0oG3hnAospjwQsAXuK9tOCg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张连红
+T1 魏特琳女士日记中的日军性暴行
+JF 百年潮
+YR 2000
+IS 11
+OP 30-36
+AB <正> 魏特琳女士(Minnie Vautrin)是南京大屠杀期间留在南京的美籍传教士之一,作为一位虔诚的基督徒,她反对战争与暴力,爱好和平。在南京大屠杀期间,担任金陵女子大学难民所的负责人,她利用中立国的身份,对南京妇孺难民进行了力所能及的救济和保护,在她奋力保护之下,成千上万名难民妇女的生命和贞操得以保存。同时,她以一个女性的眼光和从第三者的角度,真实地记录了失去理性和人道的加害者日本军的丑恶行径。本文试图通过保存在耶鲁大学神
+SN 1007-4259
+CN 11-3844/O
+LA 中文;
+DS CNKI
+LK https://link.cnki.net/doi/10.16624/j.cnki.11-3844/d.2000.11.005
+DO 10.16624/j.cnki.11-3844/d.2000.11.005
+
+RT Journal Article
+SR 1
+A1 高晔
+T1 《魏特琳日记》在宁首发披露南京大屠杀新罪证
+JF 全国新书目
+YR 2000
+IS 11
+OP 11
+AB <正> 一部详实记录了侵华日军在南京的暴行、具有重要史料价值的《魏特琳日记》,最近由江苏人民出版社全译出版。10月12日,正值第11届全国书市在南京开幕之际,举行了该书首发式。日记的作者明妮·魏特琳是美国人,在南京生活、工作了20多年,曾任金陵女子文理学院教授、教育系主任,并二度代理校长。1937年日军攻占南京前夕,该校西迁,她坚持留守南京,并与拉贝等国际友人共同发起建立了南京安全区,她还亲
+SN 0578-073X
+CN 11-1683/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BHw-lvRho8JJz4NIDumz5ibVk8rx0kRWtzRtyO1JmPqEjANhHuj2IcZGjNkyf1xYI8XNGw3_NDZyK5P5uhF7fdnfiqAOlMcrm_OIOzr8DV27yY2bp_iABWXVvPxAuHCvSxtMUFq3kX9ZNdNB9oFv_8APyzwmo9Lyi47QuhN_h5vw==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 尔兵
+T1 世纪盛会精品荟萃——第11届全国书市江苏人民出版社参展精品书述评
+JF 全国新书目
+YR 2000
+IS 11
+OP 10
+AB <正> 江苏人民出版社在第11届全国书市上,推出了精心策划、精心编辑、精心印制的一道道精品大餐:"剑桥文丛"(第二辑共9本),由一流科学家撰写,涉及天外智慧、基因工程、环保灾难等诸多科学领域,代表了科普读物的最高水平。剑桥科普不是旧的科学知识的普及,它始终站在科学的前沿,普及着还不为众人所知的最新科学知识。"汉译大众精品文库",该社的品牌书之一,已出50余种,其中《伟大的书》、《极端的年代》、《革命的年代》、《资本的年代》、《帝国的年代》、《性政
+SN 0578-073X
+CN 11-1683/G2
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BHw-lvRho8JJz4NIDumz5ibVk8rx0kRWtzRtyO1JmPqEjANhHuj2Ice23iP4OXBe5LprZhAt2rdtlGjdMV3xk8BJVGYQLhwujye3aYbmQwTVAYa9NyWEcDi-Np1qosFoRRaw8xU9o0k4b6S9uWAUrRlg9wWEXgBMRMC2vAE1yakg==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 张连红,杨夏鸣
+T1 救苦救难的“活菩萨”──魏特琳
+JF 紫金岁月
+YR 2000
+IS 10
+OP 38-43
+AB 魏特琳（１８８６－１９４１），又名华群，美国人。是中国现代史舞台上曾经活跃着的一位富有传奇色彩的国际友人，她在 ５５年的短暂独身生涯中，大部分时间是在南京度过的。在南京大屠杀期间，她冒着生命危险，保护了数以万计的妇女和儿童，使许多妇女免遭日寇的摧残和蹂躏。这位被尘封半个多世纪的“辛德勒”式的人物，生平事迹鲜为人知，本文特此予以披露，以飨读者。
+SN 1004-5430
+CN 32-1024/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BXUe3AxKdBLwYXbBbn0UeZELz6bUtQb9iBb5UK6kws6veAZDaeRfbJe2A17tCPsLO7nUd9FfPT80fiODbCs-lPN-zNmKvb1S2PL-vgkSqXQ2DNhPJiSjJLGsHwwgIlwxW0TfZvjqJwek_Qyx2cbsgkjZsUT9hDj92a__udNhUBdw==&uniplatform=NZKPT&language=CHS
+
+RT Newspaper Article
+SR 1
+A1 尔兵
+T1 世纪盛会精品荟萃
+JF 中国图书商报
+OP 003
+FD 2000-09-22
+PB 中国图书商报
+LA 中文;
+CN 11-0130
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BXUe3AxKdBLwYXbBbn0UeZZMNwYmZpFVJ1RlQd8p-Dk1ryqF0PLrPzv9uUO22wmpARC_ByqKHDm81_y-cZrN8hYS0JiCTm93ZV-JgWEmdkPccIxMSt5attlmd6O2jZMJE7TDFP2C7H2-xVw4MgjeK1UHLQyoi4qYIZY9gNHOyyd9O4SB7zd1Va&uniplatform=NZKPT&language=CHS
+
+RT Conference Proceeding
+SR 1
+A1 张连红
+T1 美国传教士魏特琳女士日记中的日军性暴行
+JF 近代中国与世界——第二届近代中国与世界学术讨论会论文集（第二卷）
+PB 中国史学会、中国社会科学院
+PP 中国北京
+YR 2000
+OP 161-173
+K1 魏特琳;南京大屠杀;魏特琳日记;性暴行;美国传教士
+AB <正>魏特琳女士(Minnie Vautrin)是南京大屠杀期间留在南京的美籍传教上之一,作为一位虔诚的基督徒,她反对战争与暴力,爱好和平。在南京大屠杀期间,魏特琳女士担任金陵女子大学难民所的负责人,她利用中立国的身份,对作为被害者的南京妇孺难民进行了力所能及的救济与保护,在她的奋力保护之下,成千上万名难
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-BwP-GRIIJ03SXjQCJ0foAPHk6gHAhYzJYeEoW0Ww2gvoAxdku8CKJ94666E3IkLM9d20KBdF5pcY0Wg0mDcjjxxZHd1UhcyHBTtvGTQCFqWkshlPaEUgegGwMzemG3Z1EOzjtu37RaeB-tbQPTu8BYM1diJ9HBka9xPhE2cQI8b-ATyzYk8IYy&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 朱安平
+T1 魏特林:金陵的女“辛德勒”
+JF 文史精华
+YR 2000
+IS 04
+OP 49-52
+SN 1005-4154
+CN 13-1166/K
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-DVR5dD9HjC4sgM0svs1KHJrFfDJWBWJPOd2LmvvycNejhxGkXqdBsSoUujvB8d-0CGpsjR9e6p-v6fLaejtUFnHB_F8zWVgEthgkWeqUuwO6Pt51W80N-IyjaAVFzUn65EWlAPc_25NU9uY7H92bqHxCDzpkP3K5tjy4mUS5U8bQ==&uniplatform=NZKPT&language=CHS
+
+RT Journal Article
+SR 1
+A1 经盛鸿,沈岚
+T1 南京大屠杀的重要见证人魏特琳
+JF 民国春秋
+YR 2000
+IS 02
+OP 43-46
+CN 32-1102
+LA 中文;
+DS CNKI
+LK https://kns.cnki.net/kcms2/article/abstract?v=g8n7TwuHW-Dm1N8avKO_2tWj4f0q-miBCN6z1Ce8JRYexKMZXvIFadph2sJ0G66dhsaS2BlwUE4zvzS2ZvjAQjFujenFn-4I18KQaZkkFimRDxw806XDYTPR-raIPaFleTTTerPi7Scvxlw5WkqaiUlYB9PFhTKe71CKU9kd5zB4YoU-DV0Xfg==&uniplatform=NZKPT&language=CHS
+
+ 
