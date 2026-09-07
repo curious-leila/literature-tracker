@@ -2,6 +2,7 @@ export type Relevance = "high" | "medium" | "low";
 
 export interface EvidenceCase {
   id: number;
+  dedup_key: string;
   title: string;
   source: string;
   year: string;
@@ -11,6 +12,15 @@ export interface EvidenceCase {
   reason: string;
   cross_point: string;
   suggestion: string;
+  has_direct_link: boolean;
+  has_doi_fallback: boolean;
+}
+
+export interface DuplicateGroup {
+  dedup_key: string;
+  title: string;
+  occurrences: number;
+  files: string[];
 }
 
 export interface PromptMilestone {
@@ -21,6 +31,11 @@ export interface PromptMilestone {
 
 export interface RunSummary {
   run_type: string;
+  problem_context: {
+    manual_screening_minutes_per_week: number;
+    evidence_type: string;
+    note: string;
+  };
   scope: {
     input_boundary: string;
     automated_steps: string[];
@@ -48,5 +63,7 @@ export interface RunSummary {
     recorded_at: string;
   };
   prompt_milestones: PromptMilestone[];
+  duplicate_groups: DuplicateGroup[];
   cases: EvidenceCase[];
+  records: EvidenceCase[];
 }
