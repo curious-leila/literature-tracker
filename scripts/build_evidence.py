@@ -22,6 +22,19 @@ CASE_TITLES = [
     "让“世界记忆”成为维护和平的基石",
     "顺应论视阈下的外宣英译策略研究",
 ]
+SNAPSHOT_FIELDS = [
+    "id",
+    "dedup_key",
+    "title",
+    "source",
+    "year",
+    "journal",
+    "relevance",
+    "analysis",
+    "link",
+    "doi",
+    "created_at",
+]
 
 
 def _analysis_fields(value: str) -> dict[str, str]:
@@ -72,23 +85,53 @@ def _load_import_records(import_dir: Path) -> tuple[list[dict], list[dict]]:
     return records, duplicates
 
 
-def build_evidence(db_path: Path, import_dir: Path) -> dict:
-    import_records, duplicates = _load_import_records(import_dir)
-    import_keys = {record["dedup_key"] for record in import_records}
-
+def capture_recorded_run(db_path: Path, snapshot_path: Path) -> None:
+    """Export the non-secret evidence fields needed for public reproduction."""
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     try:
         rows = conn.execute(
-            """
-            SELECT id, dedup_key, title, source, year, journal, relevance,
-                   analysis, link, doi, created_at
-            FROM papers
-            ORDER BY id
-            """
+            f"SELECT {', '.join(SNAPSHOT_FIELDS)} FROM papers ORDER BY id"
         ).fetchall()
     finally:
         conn.close()
+
+    if not rows:
+        raise ValueError("Cannot capture an empty recorded run.")
+
+    payload = {
+        "schema_version": "1.0",
+        "source": "SQLite recorded-run export",
+        "captured_at": max(row["created_at"] for row in rows),
+        "records": [{field: row[field] for field in SNAPSHOT_FIELDS} for row in rows],
+    }
+    snapshot_path.parent.mkdir(parents=True, exist_ok=True)
+    snapshot_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _load_recorded_run(snapshot_path: Path) -> list[dict]:
+    payload = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    rows = payload.get("records")
+    if not isinstance(rows, list) or not rows:
+        raise ValueError(f"Recorded-run snapshot is empty or invalid: {snapshot_path}")
+
+    missing_fields = [
+        row.get("id", "unknown")
+        for row in rows
+        if any(field not in row for field in SNAPSHOT_FIELDS)
+    ]
+    if missing_fields:
+        raise ValueError(f"Recorded-run rows have missing fields: {missing_fields}")
+    return rows
+
+
+def build_evidence(snapshot_path: Path, import_dir: Path) -> dict:
+    import_records, duplicates = _load_import_records(import_dir)
+    import_keys = {record["dedup_key"] for record in import_records}
+    rows = _load_recorded_run(snapshot_path)
 
     db_keys = {row["dedup_key"] for row in rows}
     if import_keys != db_keys:
@@ -196,6 +239,17 @@ def _parse_args() -> argparse.Namespace:
         "--db",
         type=Path,
         default=REPO_ROOT / "data" / "literature.db",
+        help="SQLite source used only with --capture-snapshot.",
+    )
+    parser.add_argument(
+        "--snapshot",
+        type=Path,
+        default=REPO_ROOT / "data" / "recorded-run.json",
+    )
+    parser.add_argument(
+        "--capture-snapshot",
+        action="store_true",
+        help="Refresh the public recorded-run snapshot from the local SQLite database.",
     )
     parser.add_argument(
         "--imports",
@@ -212,7 +266,14 @@ def _parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = _parse_args()
-    evidence = build_evidence(args.db, args.imports)
+    if args.check and args.capture_snapshot:
+        print("--check and --capture-snapshot cannot be used together.")
+        return 2
+    if args.capture_snapshot:
+        capture_recorded_run(args.db, args.snapshot)
+        print(f"Wrote {args.snapshot}")
+
+    evidence = build_evidence(args.snapshot, args.imports)
     rendered = json.dumps(evidence, ensure_ascii=False, indent=2) + "\n"
 
     if args.check:
