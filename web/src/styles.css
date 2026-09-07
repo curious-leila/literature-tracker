@@ -1,0 +1,34 @@
+:root {
+  font-family: "Fira Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1e3a8a;
+  background: #f8fafc;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+.section, .topbar { width: min(calc(100% - 40px), 1240px); margin: 0 auto; }
+.topbar { min-height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.topbar nav { display: flex; gap: 24px; }
+.topbar nav a { display: inline-flex; gap: 4px; align-items: center; }
+.brand { font-family: "Fira Code", monospace; font-weight: 700; text-decoration: none; }
+.hero { padding: 100px 0 72px; }
+.hero h1 { max-width: 900px; font-size: clamp(3rem, 7vw, 6rem); line-height: 1.02; margin: 16px 0 24px; }
+.hero > p:last-child { max-width: 680px; font-size: 18px; }
+.eyebrow { font-family: "Fira Code", monospace; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); }
+.metrics article { display: grid; padding: 24px; border: 1px solid #dbeafe; }
+.metrics strong { font-size: 48px; }
+.section:not(.hero):not(.metrics) { padding-top: 112px; }
+.steps, .timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.steps article, .timeline article, [role="tabpanel"] { padding: 24px; border: 1px solid #dbeafe; background: white; }
+.steps article { display: grid; gap: 24px; }
+[role="tablist"] { display: flex; gap: 8px; }
+[role="tab"] { padding: 12px 20px; cursor: pointer; }
+.timeline { grid-template-columns: repeat(4, 1fr); padding-bottom: 96px; }
+.state-message { min-height: 100vh; display: grid; place-items: center; }
+
+@media (max-width: 760px) {
+  .topbar nav a:not(:last-child) { display: none; }
+  .metrics, .steps, .timeline { grid-template-columns: 1fr 1fr; }
+}
