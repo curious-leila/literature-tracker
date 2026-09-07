@@ -88,8 +88,6 @@ function App() {
       .catch(() => setError(true));
   }, []);
 
-  useEffect(() => setVisibleCount(6), [query, filter]);
-
   const filteredRecords = useMemo(() => {
     if (!data) return [];
     const normalizedQuery = query.trim().toLocaleLowerCase();
@@ -358,12 +356,28 @@ function App() {
             <label className="search-field">
               <Search size={18} aria-hidden="true" />
               <span className="sr-only">搜索运行记录</span>
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索标题、期刊或判断理由" type="search" />
+              <input
+                value={query}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setVisibleCount(6);
+                }}
+                placeholder="搜索标题、期刊或判断理由"
+                type="search"
+              />
             </label>
             <div className="filter-group" aria-label="按相关度筛选">
               <Filter size={17} aria-hidden="true" />
               {(["all", "high", "medium", "low"] as const).map((value) => (
-                <button type="button" aria-pressed={filter === value} onClick={() => setFilter(value)} key={value}>
+                <button
+                  type="button"
+                  aria-pressed={filter === value}
+                  onClick={() => {
+                    setFilter(value);
+                    setVisibleCount(6);
+                  }}
+                  key={value}
+                >
                   {value === "all" ? "全部" : relevanceMeta[value].label}
                 </button>
               ))}
