@@ -142,6 +142,11 @@ def build_evidence(db_path: Path, import_dir: Path) -> dict:
     return {
         "schema_version": "1.0",
         "run_type": "recorded_local_run",
+        "problem_context": {
+            "manual_screening_minutes_per_week": 120,
+            "evidence_type": "self_reported_project_baseline",
+            "note": "Requirement-stage estimate; no controlled timing study was retained.",
+        },
         "scope": {
             "input_boundary": "Manually exported CNKI RefWorks and WOS RIS files",
             "automated_steps": ["parse", "deduplicate", "classify", "format", "email"],
