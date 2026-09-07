@@ -1,10 +1,6 @@
-"""
-Main pipeline: parse exported files → dedup → AI analysis → email brief.
-Default LLM: Gemini API (free tier, no payment needed).
-Fallback: Claude API (paid, better quality).
-Run this script after dropping exported files into data/imports/.
-"""
+"""Parse exported files, deduplicate, analyze, and deliver a literature brief."""
 
+import argparse
 import sys
 import time
 from pathlib import Path
@@ -79,22 +75,46 @@ def _guess_keyword(filename: str, keyword_map: dict) -> str:
 
 def step_analyze(conn) -> list[dict]:
     """
-    Get unpushed papers and analyze them with Claude API.
-    Returns list of papers with AI analysis filled in.
+    Get unpushed papers and analyze them with the configured LLM.
+
+    The run is all-or-nothing: incomplete or malformed model output is not
+    persisted, so the same papers remain eligible for a safe retry.
     """
     papers = get_unpushed_papers(conn, since_days=30)
     if not papers:
         print("[---] No new papers to analyze.")
         return []
 
-    # Batch analyze: send all papers to Claude in one call
-    print(f"[AI] Sending {len(papers)} papers to Claude for analysis...")
+    print(f"[AI] Sending {len(papers)} papers to {config.LLM_BACKEND} for analysis...")
     analyzed = _call_ai_analyze(papers)
+    _validate_analysis_results(analyzed, expected_count=len(papers))
 
     for p in analyzed:
-        update_relevance(conn, p["id"], p.get("relevance", "low"), p.get("analysis", ""))
+        update_relevance(conn, p["id"], p["relevance"], p["analysis"])
 
     return analyzed
+
+
+def _validate_analysis_results(papers: list[dict], expected_count: int) -> None:
+    """Reject partial or malformed LLM output before it reaches persistence."""
+    allowed = {"high", "medium", "low"}
+    invalid = []
+
+    if len(papers) != expected_count:
+        raise ValueError(
+            f"Incomplete AI response: expected {expected_count} papers, got {len(papers)}."
+        )
+
+    for position, paper in enumerate(papers, start=1):
+        relevance = paper.get("relevance")
+        analysis = paper.get("analysis")
+        if relevance not in allowed or not isinstance(analysis, str) or not analysis.strip():
+            invalid.append(str(paper.get("id", position)))
+
+    if invalid:
+        raise ValueError(
+            "Incomplete AI response for paper ids: " + ", ".join(invalid)
+        )
 
 
 def _call_ai_analyze(papers: list[dict]) -> list[dict]:
@@ -561,43 +581,80 @@ def step_send_email(content: str) -> bool:
         return False
 
 
-def main():
-    import_dir = Path("data/imports")
-    db_path = Path(config.DB_PATH)
+def run_pipeline(
+    *,
+    import_dir: Path,
+    db_path: Path,
+    dry_run: bool = False,
+    output_path: Path | None = None,
+) -> bool:
+    """Run the workflow and return True only when delivery succeeds."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = init_db(str(db_path))
 
-    # ── Step 1: Collect ──
-    print("[>>] Step 1: Collecting papers from import files...")
-    new_count = step_collect(import_dir, conn)
-    print(f"   [OK] {new_count} new papers inserted.\n")
+    try:
+        print("[>>] Step 1: Collecting papers from import files...")
+        new_count = step_collect(import_dir, conn)
+        print(f"   [OK] {new_count} new papers inserted.\n")
 
-    # ── Step 2: Analyze ──
-    print("[AI] Step 2: AI analysis...")
-    analyzed = step_analyze(conn)
+        print("[AI] Step 2: AI analysis...")
+        analyzed = step_analyze(conn)
+        if not analyzed:
+            print("   No papers to analyze. Done.")
+            return True
 
-    if not analyzed:
-        print("   No papers to analyze. Done.")
-        conn.close()
-        return
+        print("\n[DOC] Step 3: Formatting brief...")
+        brief = step_format_brief(analyzed)
+        if output_path:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_path.write_text(brief, encoding="utf-8")
+            print(f"   [OK] Brief written to {output_path}")
 
-    # ── Step 3: Format ──
-    print("\n[DOC] Step 3: Formatting brief...")
-    brief = step_format_brief(analyzed)
+        if dry_run:
+            print("[DRY RUN] Email skipped; database push state is unchanged.\n")
+            print(brief)
+            return True
 
-    # ── Step 4: Push ──
-    print("[MAIL] Step 4: Sending brief...")
-    success = step_send_email(brief)
+        print("[MAIL] Step 4: Sending brief...")
+        success = step_send_email(brief)
+        if not success:
+            print("   [WARN] Delivery failed; papers remain unpushed for retry.")
+            return False
 
-    # Mark pushed if email sent successfully or if we printed to console
-    if success or analyzed:
         pushed_ids = [p["id"] for p in analyzed]
         mark_as_pushed(conn, pushed_ids)
         print(f"   [OK] Marked {len(pushed_ids)} papers as pushed.")
+        print("\n[OK] Pipeline complete.")
+        return True
+    finally:
+        conn.close()
 
-    conn.close()
-    print("\n[OK] Pipeline complete.")
+
+def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Generate the brief without sending email or marking papers as pushed.",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Optional UTF-8 file path for the generated brief.",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = _parse_args(argv)
+    success = run_pipeline(
+        import_dir=Path("data/imports"),
+        db_path=Path(config.DB_PATH),
+        dry_run=args.dry_run,
+        output_path=args.output,
+    )
+    return 0 if success else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
