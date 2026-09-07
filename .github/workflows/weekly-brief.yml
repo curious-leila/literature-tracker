@@ -1,10 +1,7 @@
-name: Weekly Literature Brief
+name: Literature Brief (Manual)
 
 on:
-  schedule:
-    # Every Monday 8:00 AM Beijing time (UTC+8 → UTC 0:00)
-    - cron: "0 0 * * 1"
-  workflow_dispatch:  # manual trigger
+  workflow_dispatch:
 
 jobs:
   run-pipeline:
@@ -23,12 +20,31 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run reliability tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Restore delivery state
+        uses: actions/cache/restore@v4
+        with:
+          path: data/literature.db
+          key: literature-db-${{ github.run_id }}
+          restore-keys: |
+            literature-db-
+
       - name: Run pipeline
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_BACKEND: siliconflow
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
         run: python pipeline.py
+
+      - name: Save delivery state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/literature.db
+          key: literature-db-${{ github.run_id }}
