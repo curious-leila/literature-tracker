@@ -504,7 +504,7 @@ function App() {
 
       <footer className="footer section">
         <div><span className="brand-mark" aria-hidden="true">LT</span><strong>Literature Triage Evidence</strong></div>
-        <p>个人产品 · 2025.05 · 数据口径与源码保持一致</p>
+        <p>个人产品 · 2026.05 · 数据口径与源码保持一致</p>
         <a href="https://github.com/curious-leila/literature-tracker" target="_blank" rel="noreferrer">审阅源码 <ArrowUpRight size={15} aria-hidden="true" /></a>
       </footer>
     </Tooltip.Provider>

@@ -460,47 +460,61 @@ def step_format_brief(analyzed_papers: list[dict]) -> str:
     lines.append(f"文献简报（{today}）")
     lines.append(f"南京大屠杀文化记忆建构中的魏特琳日记汉译考察（关键词：南京大屠杀翻译、魏特琳日记、翻译与文化记忆）")
     lines.append("")
-    lines.append(f"已扫描 {len(analyzed_papers)} 篇。其中，强相关 {len(high)} 篇，中度相关 {len(medium)} 篇，低相关 {len(low)} 篇。")
+    lines.append(
+        f"本次共处理 {len(analyzed_papers)} 篇｜优先阅读全文 {len(high)} 篇"
+        f"｜浏览摘要 {len(medium)} 篇｜背景参考 {len(low)} 篇"
+    )
     lines.append("")
 
     # ── Opening ──
     if high:
         top3 = _sort_by_tier(high)[:3]
-        lines.append(f"本周最值得关注的文献包括《{top3[0].get('title', '')[:40]}》等。"
-                     f"强相关文献主要来自知网，以南京大屠杀翻译史、魏特琳日记研究为主。")
+        lines.append(
+            f"本期最值得关注：《{top3[0].get('title', '')[:40]}》等。"
+            "以下优先展示 3 篇，并保留判定理由、研究交叉点和原文入口。"
+        )
     elif medium:
-        lines.append(f"本周无强相关新增，中度相关文献可供拓展阅读。")
+        lines.append("本期无强相关新增，以下展示最值得浏览的中度相关文献。")
     else:
-        lines.append(f"本周无新增相关文献，已扩展至\"翻译与文化记忆\"关键词检索。")
+        lines.append("本期无强相关或中度相关新增，低相关结果已归档。")
     lines.append("")
 
-    if not high and not medium:
-        if low:
-            for i, p in enumerate(_sort_by_tier(low)[:3]):
-                lines.extend(_format_paper_block(p, i + 1))
-    else:
-        for section_label, papers in [("◆ 强相关", high), ("◆ 中度相关", medium)]:
-            if not papers:
-                continue
-            lines.append(f"{section_label}（{len(papers)} 篇）")
-            lines.append("")
-            for i, p in enumerate(_sort_by_tier(papers)):
-                lines.extend(_format_paper_block(p, i + 1))
+    # 邮件只承担“快速决策”，完整记录留在证据页，避免首次全量导入生成数百行正文。
+    if high:
+        sorted_high = _sort_by_tier(high)
+        lines.append("◆ 优先阅读全文｜Top 3")
+        lines.append("")
+        for i, p in enumerate(sorted_high[:3]):
+            lines.extend(_format_paper_block(p, i + 1))
 
-    if low and (high or medium):
-        lines.append("")
-        lines.append(f"◆ 低相关（{len(low)} 篇）")
-        lines.append("")
-        for i, p in enumerate(_sort_by_tier(low)):
-            tier = get_journal_tier(p.get("source", ""), p.get("journal", ""))
-            tier_str = f" [{tier}]" if tier else ""
-            lines.append(f"  {i+1}. [{p.get('source', '')}]{tier_str} {p['title'][:60]}")
-            if p.get("year"):
-                lines.append(f"     {p.get('year', '')} | {p.get('journal', '')}")
+        remaining_high = sorted_high[3:]
+        if remaining_high:
+            lines.append(f"◆ 其他高相关（{len(remaining_high)} 篇）")
             lines.append("")
+            for i, p in enumerate(remaining_high, 1):
+                lines.extend(_format_compact_paper_line(p, i))
+
+    if medium:
+        sorted_medium = _sort_by_tier(medium)
+        preview_count = min(5, len(sorted_medium))
+        lines.append(f"◆ 浏览摘要（{len(medium)} 篇，邮件展示前 {preview_count} 篇）")
+        lines.append("")
+        for i, p in enumerate(sorted_medium[:preview_count], 1):
+            lines.extend(_format_compact_paper_line(p, i))
+
+    if not high and not medium and low:
+        lines.append("◆ 背景参考｜Top 3")
+        lines.append("")
+        for i, p in enumerate(_sort_by_tier(low)[:3], 1):
+            lines.extend(_format_compact_paper_line(p, i))
+
+    if low:
+        lines.append("")
+        lines.append(f"◆ 背景参考（{len(low)} 篇）已归档，不在邮件中逐条展开。")
 
     # ── Closing ──
-    lines.append("下周导出知网/WOS文献后放入 data/imports/ 即可自动更新。")
+    lines.append("")
+    lines.append("完整运行记录：https://curious-leila.github.io/literature-tracker/#records")
     lines.append("")
 
     return "\n".join(lines)
@@ -541,6 +555,26 @@ def _format_paper_block(p: dict, num: int) -> list[str]:
         for line in p["analysis"].split("\n"):
             if line.strip():
                 lines.append(f"     {line.strip()}")
+    lines.append("")
+    return lines
+
+
+def _format_compact_paper_line(p: dict, num: int) -> list[str]:
+    """Format one paper as a compact title-and-link entry for email scanning."""
+    tier = get_journal_tier(p.get("source", ""), p.get("journal", ""))
+    meta = " · ".join(
+        part for part in [p.get("source", ""), tier, p.get("year", "")] if part
+    )
+    link = p.get("link", "") or ""
+    doi = p.get("doi", "") or ""
+    if not link and doi:
+        link = f"https://doi.org/{doi}"
+
+    lines = [f"  {num}. {p.get('title', '(无标题)')}"]
+    if meta:
+        lines.append(f"     {meta}")
+    if link:
+        lines.append(f"     {link}")
     lines.append("")
     return lines
 

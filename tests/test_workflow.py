@@ -45,6 +45,32 @@ class ParserEvidenceTests(unittest.TestCase):
 
 
 class ReliabilityTests(unittest.TestCase):
+    def test_email_brief_prioritizes_actions_instead_of_dumping_all_records(self):
+        papers = []
+        for relevance, count in (("high", 4), ("medium", 6), ("low", 2)):
+            for index in range(count):
+                papers.append(
+                    {
+                        "title": f"{relevance}-{index}",
+                        "source": "CNKI",
+                        "year": "2026",
+                        "journal": "",
+                        "language": "zh",
+                        "relevance": relevance,
+                        "analysis": f"判定理由: {relevance}-{index}",
+                        "link": f"https://example.com/{relevance}/{index}",
+                    }
+                )
+
+        brief = pipeline.step_format_brief(papers)
+
+        self.assertIn("优先阅读全文 4 篇", brief)
+        self.assertIn("其他高相关（1 篇）", brief)
+        self.assertIn("浏览摘要（6 篇，邮件展示前 5 篇）", brief)
+        self.assertIn("背景参考（2 篇）已归档", brief)
+        self.assertNotIn("low-0", brief)
+        self.assertIn("完整运行记录", brief)
+
     def test_incomplete_analysis_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "Incomplete AI response"):
             pipeline._validate_analysis_results(
