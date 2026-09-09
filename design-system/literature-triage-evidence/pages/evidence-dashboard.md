@@ -1,13 +1,13 @@
 # Evidence page visual direction
 
-This page override supersedes the dashboard defaults in MASTER.md. Updated for the September 2026 portfolio review.
+This page override supersedes the dashboard defaults in MASTER.md.
 
-- Preserve the existing information sequence: overview → email evidence → workflow → case → evidence principles. Counts and case text continue to come from run-summary.json.
-- Use warm paper (#f7f6f2), charcoal (#282e2b), muted green (#436653), fine rules, and restrained 3–6px corners. Avoid blue gradients, technical grid backgrounds, heavy shadows, oversized marketing headings, and dark KPI slabs.
-- Use system serif Chinese headings and Georgia numerals, with system sans-serif body copy. No remote font dependency.
-- Maximum content width is 1120px. Desktop hero pairs the narrative with a quiet 2×2 numerical summary. Desktop delivery places the heading and metrics beside an uncropped screenshot.
-- At ≤720px, keep all navigation links available in a two-row header. Hero metrics become a single row. Delivery keeps the conclusion above metrics and a complete screenshot thumbnail; the original image remains available in a new tab.
-- Use one scroll-padding offset derived from the actual sticky header height plus 20px. Section separation uses margins, not extra anchor padding. Restore initial fragments after asynchronous evidence data mounts.
-- Reserve only the missing scroll distance after the footer so the final navigation target can align on tall screens. Navigation highlights follow the visible section.
-- Screenshots use contain/intrinsic sizing; do not crop the source evidence. Mobile thumbnails support overview, with original-size opening for reading.
-- Respect reduced motion and visible keyboard focus. Validate navigation, reload with fragment, back history, image opening, overflow, and 320–1440px viewports.
+- Preserve the evidence sequence and real run-summary.json data: overview, email delivery, workflow, case, evidence principles.
+- Brand: Literature Workflow. Keep the complete Chinese project name in the hero and browser metadata. The hero has one primary delivery CTA; GitHub remains in the header and evidence links.
+- Warm paper #f7f6f2, charcoal #282e2b, muted green #436653. System serif headings, Georgia English wordmark and numerals, system sans-serif body. No external font requests, blue gradients, heavy shadows, or LT badge.
+- The hero includes a complete linked thumbnail of the real email alongside its narrative and four run counts. Never substitute recreated evidence.
+- Desktop navigation uses complete viewport reading frames: overview, delivery, workflow, and the closing group of case + evidence principles + footer. Each frame has a minimum height based on available viewport height, not a fixed height or clipped overflow. The next chapter starts below the viewport after a navigation jump.
+- Keep one header offset, measured with ResizeObserver: actual sticky header height + 20px. Reapply initial fragments after data arrives. Retain native hash history and ordinary manual scrolling.
+- Mobile retains all nav links, complete linked image thumbnails, natural vertical scrolling, no forced content clipping or reduced-scale whole pages. Longer sections can exceed one screen.
+- A 44px minimum fixed lower-right return-to-top control respects safe areas; mobile uses an arrow with an accessible label.
+- Validate short desktop viewports comparable to 125% browser zoom, full chapter boundaries, direct links/reloads, keyboard focus, image links, back-to-top, reduced motion and mobile overflow.

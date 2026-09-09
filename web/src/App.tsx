@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   ArrowRight,
+  ArrowUp,
   ArrowUpRight,
   Braces,
   Check,
@@ -44,15 +45,7 @@ function App() {
     const header = document.querySelector<HTMLElement>(".topbar");
     const updateOffset = () => {
       document.documentElement.style.setProperty("--nav-offset", `${(header?.offsetHeight ?? 64) + 20}px`);
-      // Reserve only the missing scroll range after the last navigation target.
-      // This lets all three navigation links land on the same baseline.
-      const lastTarget = document.getElementById("case");
-      const footer = document.querySelector<HTMLElement>(".footer");
-      if (lastTarget && footer) {
-        const remaining = footer.getBoundingClientRect().bottom - lastTarget.getBoundingClientRect().top;
-        const space = Math.max(0, window.innerHeight - (header?.offsetHeight ?? 64) - 20 - remaining);
-        document.documentElement.style.setProperty("--end-space", `${space}px`);
-      }
+
     };
     updateOffset();
     const resizeObserver = new ResizeObserver(updateOffset);
@@ -72,7 +65,7 @@ function App() {
     window.addEventListener("scroll", updateActive, { passive: true });
     function updateActive() {
       const offset = (header?.offsetHeight ?? 64) + 40;
-      const sections = [...document.querySelectorAll<HTMLElement>("main > section[id]")];
+      const sections = [...document.querySelectorAll<HTMLElement>("main > [id]")];
       const current = sections.filter((section) => section.getBoundingClientRect().top <= offset).at(-1);
       setActiveSection(current?.id ?? "top");
     }
@@ -84,7 +77,6 @@ function App() {
       window.removeEventListener("hashchange", updateActive);
       window.removeEventListener("scroll", updateActive);
       document.documentElement.style.removeProperty("--nav-offset");
-      document.documentElement.style.removeProperty("--end-space");
     };
   }, [data]);
 
@@ -129,8 +121,7 @@ function App() {
 
       <header className="topbar">
         <a className="brand" href="#top" aria-label="返回页面顶部">
-          <span className="brand-mark" aria-hidden="true">LT</span>
-          <span>Literature Triage</span>
+          <span>Literature Workflow</span>
         </a>
         <nav aria-label="主导航">
           <a href="#delivery" aria-current={activeSection === "delivery" ? "location" : undefined}>邮件证据</a>
@@ -147,19 +138,23 @@ function App() {
       <main id="main-content">
         <section className="hero section" id="top">
           <div className="hero-copy">
+            <p className="project-name">文献AI筛选与邮件简报工作流</p>
             <p className="eyebrow"><span aria-hidden="true" /> 真实运行 · 2026.05 · Qwen2.5-32B</p>
-            <h1>把跨平台检索结果，变成可行动的文献简报。</h1>
+            <h1>把跨平台检索结果，<br className="desktop-break" />变成可行动的文献简报。</h1>
             <p className="hero-lead">导入知网与 WOS 检索文件后，自动完成解析、历史去重、LLM 分层和邮件推送。</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#delivery">
                 查看邮件交付 <ArrowRight size={17} aria-hidden="true" />
               </a>
-              <a className="button button-secondary" href={GITHUB_URL} target="_blank" rel="noreferrer">
-                审阅 GitHub <ArrowUpRight size={16} aria-hidden="true" />
-              </a>
             </div>
           </div>
 
+          <figure className="hero-email">
+            <a href={emailImage} target="_blank" rel="noreferrer" aria-label="打开首屏邮件证据原图">
+              <img src={emailImage} width="846" height="1860" alt="真实送达的文献邮件简报" />
+              <span>真实交付 · 查看原图 <ArrowUpRight size={14} aria-hidden="true" /></span>
+            </a>
+          </figure>
           <ol className="story-chain" aria-label="一次真实运行的数据链路">
             {storyMetrics.map((metric, index) => (
               <li key={metric.label}>
@@ -237,8 +232,9 @@ function App() {
           </ol>
         </section>
 
+        <div className="closing-chapter section" id="case">
         {featuredCase && (
-          <section className="section case-section" id="case" aria-labelledby="case-title">
+          <section className="case-section" aria-labelledby="case-title">
             <div className="section-heading case-heading">
               <p className="eyebrow">03 / 一个判断案例</p>
               <h2 id="case-title">不是只看关键词，而是输出“为什么相关”和“下一步做什么”。</h2>
@@ -259,7 +255,7 @@ function App() {
           </section>
         )}
 
-        <section className="section proof-section" id="boundary" aria-labelledby="proof-title">
+        <section className="proof-section" id="boundary" aria-labelledby="proof-title">
           <div className="proof-copy">
             <p className="eyebrow">04 / 证据原则</p>
             <h2 id="proof-title">只展示可以核验的事实。</h2>
@@ -280,13 +276,16 @@ function App() {
             </a>
           </nav>
         </section>
-      </main>
-
-      <footer className="footer section">
-        <div><span className="brand-mark" aria-hidden="true">LT</span><strong>Literature Triage</strong></div>
+      <footer className="footer">
+        <div><strong>Literature Workflow</strong></div>
         <p>个人产品 · 2026.05 · 数据口径与源码保持一致</p>
         <a href={GITHUB_URL} target="_blank" rel="noreferrer">审阅源码 <ArrowUpRight size={15} aria-hidden="true" /></a>
       </footer>
+        </div>
+      </main>
+      {activeSection !== "top" && <a className="back-to-top" href="#top" aria-label="回到顶部">
+        <ArrowUp size={17} aria-hidden="true" /><span>回到顶部</span>
+      </a>}
     </>
   );
 }

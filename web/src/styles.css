@@ -30,14 +30,14 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
 .skip-link:focus { transform: translateY(0); }
 .topbar { position: sticky; top: 0; z-index: 30; display: flex; min-height: 64px; gap: 20px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: var(--paper); }
 .brand, .topbar nav, .topbar nav a, .footer > div, .footer > a { display: flex; align-items: center; }
-.brand { gap: 10px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; text-decoration: none; letter-spacing: -.03em; }
-.brand-mark { display: inline-grid; width: 32px; height: 34px; flex: 0 0 auto; place-items: center; border: 1px solid var(--accent); border-radius: 2px; color: var(--accent); font-family: Georgia, serif; font-size: 14px; }
+.brand { gap: 10px; font-family: "Songti SC", SimSun, serif; font-size: 19px; text-decoration: none; letter-spacing: -.03em; }
 .topbar nav { gap: 8px; }
 .topbar nav a { min-height: 44px; padding: 0 12px; gap: 5px; border-radius: 4px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 160ms ease, background 160ms ease; }
 .topbar nav a:hover, .topbar nav a[aria-current="location"] { color: var(--accent); background: var(--accent-soft); }
 .topbar nav a[aria-current="location"] { box-shadow: inset 0 -2px var(--accent); }
 .topbar nav .nav-github { margin-left: 10px; padding-right: 0; color: var(--ink); }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 270px; column-gap: 64px; row-gap: 22px; padding-block: clamp(32px, 5vh, 56px) 30px; }
+.project-name { margin-bottom: 10px; color: var(--ink); font-size: 13px; font-weight: 500; letter-spacing: .05em; }
 .hero-copy { max-width: 750px; align-self: center; }
 .eyebrow { display: flex; margin-bottom: 16px; gap: 9px; align-items: center; color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .12em; line-height: 1.5; }
 .hero .eyebrow > span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
@@ -138,8 +138,7 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
   :root { --section-gap: 44px; --nav-offset: 122px; }
   .section, .topbar { width: calc(100% - 36px); }
   .topbar { flex-wrap: wrap; gap: 0; padding-top: 10px; }
-  .brand { width: 100%; font-size: 18px; }
-  .brand-mark { width: 28px; height: 28px; font-size: 12px; }
+  .brand { width: 100%; min-height: 28px; font-size: 18px; }
   .topbar nav { width: 100%; justify-content: space-between; gap: 4px; padding-block: 4px; }
   .topbar nav a { padding-inline: 9px; font-size: 12px; }
   .topbar nav a:first-child { margin-left: -9px; }
@@ -193,7 +192,7 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
 /* Keep the final navigation target alignable even on tall desktop viewports. */
-body { padding-bottom: var(--end-space, 0px); }
+
 .delivery-section { grid-template-rows: auto 1fr; }
 @media (max-width: 720px) {
   .delivery-section { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); column-gap: 16px; }
@@ -211,4 +210,79 @@ body { padding-bottom: var(--end-space, 0px); }
   .email-proof a { padding-bottom: 38px; }
   .email-proof a > span { right: 0; bottom: 0; width: 100%; min-height: 32px; padding-inline: 4px; justify-content: center; font-size: 10px; }
   .email-proof figcaption { margin-top: 8px; font-size: 10px; line-height: 1.6; }
+}
+
+/* Each desktop chapter has a complete reading frame; content may grow naturally. */
+.brand { font-family: Georgia, "Times New Roman", serif; }
+.hero { min-height: calc(100svh - var(--nav-offset) + 20px); grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: auto auto auto; align-content: center; gap: 24px 48px; padding-block: 20px 32px; }
+.hero-copy { grid-column: 1; grid-row: 1; }
+.hero h1 { font-size: clamp(30px, 3.1vw, 42px); line-height: 1.45; text-wrap: initial; }
+.hero-email { grid-column: 2; grid-row: 1 / span 3; margin: 0; padding: 12px; background: #eeeee8; border: 1px solid var(--line); border-radius: 5px; align-self: center; }
+.hero-email a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; cursor: zoom-in; }
+.hero-email img { display: block; max-width: 100%; width: auto; height: min(420px, calc(100svh - 200px)); object-fit: contain; }
+.hero-email a > span { display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 12px; min-height: 24px; color: var(--accent); }
+.story-chain { grid-column: 1; grid-row: 2; grid-template-columns: repeat(4,1fr); border: 0; border-block: 1px solid var(--line); padding: 0; }
+.story-chain li { padding: 16px 6px; }
+.story-chain li:nth-child(-n+2) { border: 0; }
+.story-chain strong { font-size: 38px; }
+.hero-boundary { grid-column: 1; grid-row: 3; border: 0; padding: 0; }
+.delivery-section, .workflow-section, .closing-chapter { min-height: calc(100svh - var(--nav-offset)); margin-top: 20px; padding-bottom: 24px; }
+.delivery-section { grid-template-rows: auto 1fr; align-content: start; }
+.email-proof { align-self: start; }
+.email-proof img { height: clamp(260px, calc(100svh - 190px), 490px); }
+.workflow-section { display: flex; flex-direction: column; }
+.workflow-section .section-heading { margin-bottom: 24px; }
+.workflow-steps { margin-top: 8px; }
+.workflow-steps li { padding-block: 28px; }
+.closing-chapter { display: flex; flex-direction: column; gap: 24px; }
+.closing-chapter .case-section { margin-top: 0; }
+.closing-chapter .proof-section { margin-top: 0; padding-block: 20px; gap: 40px; }
+.closing-chapter .footer { margin-top: auto; padding-block: 12px 0; }
+.back-to-top { position: fixed; z-index: 40; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); min-height: 44px; display: inline-flex; align-items: center; gap: 6px; padding: 0 12px; background: var(--surface); color: var(--accent); border: 1px solid var(--line); border-radius: 4px; font-size: 12px; text-decoration: none; }
+.back-to-top:hover { background: var(--accent-soft); }
+@media (min-width: 721px) and (max-height: 760px) {
+  .hero { gap: 16px 40px; }
+  .hero h1 { font-size: 36px; margin-bottom: 14px; }
+  .hero-lead { margin-bottom: 16px; }
+  .closing-chapter { gap: 18px; }
+  .closing-chapter h2 { font-size: 28px; }
+  .closing-chapter .case-card { padding: 20px 24px; }
+  .closing-chapter .proof-section { padding-block: 16px; }
+}
+@media (max-width: 960px) and (min-width: 721px) {
+  .hero { grid-template-columns: minmax(0, 1fr) 220px; gap: 20px 28px; }
+  .desktop-break { display: none; }
+  .hero h1 { font-size: 34px; }
+}
+@media (max-width: 720px) {
+  .hero { grid-template-columns: minmax(0, 1fr) 118px; grid-template-rows: auto auto auto; gap: 16px; align-content: start; padding-block: 20px 28px; }
+  .hero-copy { grid-column: 1 / -1; }
+  .hero h1 { font-size: 29px; line-height: 1.45; margin-bottom: 12px; }
+  .desktop-break { display: none; }
+  .project-name { font-size: 12px; margin-bottom: 8px; }
+  .hero-lead { margin-bottom: 14px; }
+  .hero-email { grid-column: 2; grid-row: 2; padding: 6px; align-self: start; }
+  .hero-email img { width: 100%; height: auto; }
+  .hero-email a { gap: 4px; }
+  .hero-email a > span { font-size: 10px; line-height: 1.5; text-align: center; }
+  .hero-email a > span svg { display: none; }
+  .story-chain { grid-column: 1; grid-row: 2; grid-template-columns: 1fr 1fr; align-self: stretch; }
+  .story-chain li { padding: 12px 4px; }
+  .story-chain strong { font-size: 32px; }
+  .story-chain li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .hero-boundary { grid-column: 1 / -1; grid-row: 3; }
+  .delivery-section, .workflow-section, .closing-chapter { margin-top: 20px; padding-bottom: 28px; }
+  .workflow-steps li, .workflow-steps li:first-child { padding-block: 14px; }
+  .closing-chapter { gap: 24px; }
+  .closing-chapter .proof-section { gap: 20px; }
+  .closing-chapter .footer { padding-bottom: 52px; }
+  .back-to-top { right: 12px; bottom: 12px; min-width: 44px; justify-content: center; }
+  .back-to-top span { display: none; }
+}
+@media (max-width: 720px) {
+  .email-proof img { height: auto; }
+  .hero-email img { width: auto; max-width: 100%; height: clamp(120px, calc(100svh - 460px), 230px); }
+  .story-chain { align-self: start; }
+  .story-chain li { padding-block: 10px; }
+  .hero-email { width: 100%; }
 }
