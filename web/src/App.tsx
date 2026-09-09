@@ -27,6 +27,7 @@ const workflowSteps = [
 function App() {
   const [data, setData] = useState<RunSummary | null>(null);
   const [error, setError] = useState(false);
+  const [activeSection, setActiveSection] = useState("top");
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}run-summary.json`)
@@ -37,6 +38,55 @@ function App() {
       .then(setData)
       .catch(() => setError(true));
   }, []);
+
+  useEffect(() => {
+    if (!data) return;
+    const header = document.querySelector<HTMLElement>(".topbar");
+    const updateOffset = () => {
+      document.documentElement.style.setProperty("--nav-offset", `${(header?.offsetHeight ?? 64) + 20}px`);
+      // Reserve only the missing scroll range after the last navigation target.
+      // This lets all three navigation links land on the same baseline.
+      const lastTarget = document.getElementById("case");
+      const footer = document.querySelector<HTMLElement>(".footer");
+      if (lastTarget && footer) {
+        const remaining = footer.getBoundingClientRect().bottom - lastTarget.getBoundingClientRect().top;
+        const space = Math.max(0, window.innerHeight - (header?.offsetHeight ?? 64) - 20 - remaining);
+        document.documentElement.style.setProperty("--end-space", `${space}px`);
+      }
+    };
+    updateOffset();
+    const resizeObserver = new ResizeObserver(updateOffset);
+    if (header) resizeObserver.observe(header);
+    const main = document.getElementById("main-content");
+    if (main) resizeObserver.observe(main);
+    window.addEventListener("resize", updateOffset);
+
+    // The JSON arrives after the browser's initial fragment navigation.
+    // Reapply that fragment only once the destination exists.
+    const restoreFragment = () => {
+      const id = window.location.hash.slice(1);
+      if (id) document.getElementById(id)?.scrollIntoView({ behavior: "instant", block: "start" });
+    };
+    const frame = requestAnimationFrame(restoreFragment);
+    window.addEventListener("hashchange", updateActive);
+    window.addEventListener("scroll", updateActive, { passive: true });
+    function updateActive() {
+      const offset = (header?.offsetHeight ?? 64) + 40;
+      const sections = [...document.querySelectorAll<HTMLElement>("main > section[id]")];
+      const current = sections.filter((section) => section.getBoundingClientRect().top <= offset).at(-1);
+      setActiveSection(current?.id ?? "top");
+    }
+    updateActive();
+    return () => {
+      cancelAnimationFrame(frame);
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", updateOffset);
+      window.removeEventListener("hashchange", updateActive);
+      window.removeEventListener("scroll", updateActive);
+      document.documentElement.style.removeProperty("--nav-offset");
+      document.documentElement.style.removeProperty("--end-space");
+    };
+  }, [data]);
 
   if (error) {
     return (
@@ -83,9 +133,9 @@ function App() {
           <span>Literature Triage</span>
         </a>
         <nav aria-label="主导航">
-          <a href="#delivery">邮件证据</a>
-          <a href="#workflow">工作流</a>
-          <a href="#case">判断案例</a>
+          <a href="#delivery" aria-current={activeSection === "delivery" ? "location" : undefined}>邮件证据</a>
+          <a href="#workflow" aria-current={activeSection === "workflow" ? "location" : undefined}>工作流</a>
+          <a href="#case" aria-current={activeSection === "case" ? "location" : undefined}>判断案例</a>
           <a className="nav-github" href={GITHUB_URL} target="_blank" rel="noreferrer">
             <Code2 size={16} aria-hidden="true" />
             GitHub
