@@ -238,8 +238,6 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
 .closing-chapter .case-section { margin-top: 0; }
 .closing-chapter .proof-section { margin-top: 0; padding-block: 20px; gap: 40px; }
 .closing-chapter .footer { margin-top: auto; padding-block: 12px 0; }
-.back-to-top { position: fixed; z-index: 40; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); min-height: 44px; display: inline-flex; align-items: center; gap: 6px; padding: 0 12px; background: var(--surface); color: var(--accent); border: 1px solid var(--line); border-radius: 4px; font-size: 12px; text-decoration: none; }
-.back-to-top:hover { background: var(--accent-soft); }
 @media (min-width: 721px) and (max-height: 760px) {
   .hero { gap: 16px 40px; }
   .hero h1 { font-size: 36px; margin-bottom: 14px; }
@@ -276,8 +274,6 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
   .closing-chapter { gap: 24px; }
   .closing-chapter .proof-section { gap: 20px; }
   .closing-chapter .footer { padding-bottom: 52px; }
-  .back-to-top { right: 12px; bottom: 12px; min-width: 44px; justify-content: center; }
-  .back-to-top span { display: none; }
 }
 @media (max-width: 720px) {
   .email-proof img { height: auto; }
@@ -286,3 +282,74 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
   .story-chain li { padding-block: 10px; }
   .hero-email { width: 100%; }
 }
+
+/* One type scale across chapters; navigation retains its existing size. */
+:root { --text-body: 16px; --text-small: 14px; --text-caption: 12px; --text-section: 34px; }
+.hero h1 { font-size: clamp(42px, 3.6vw, 52px); font-weight: 700; line-height: 1.3; }
+h2, .closing-chapter h2, .proof-copy h2 { font-size: var(--text-section); font-weight: 600; line-height: 1.35; }
+.project-name { font-size: var(--text-small); font-weight: 600; }
+.eyebrow { font-size: var(--text-caption); }
+.hero-lead { font-size: 18px; line-height: 1.65; }
+.section-heading > p:last-child, .proof-copy p:last-child { font-size: var(--text-body); line-height: 1.65; }
+.button { font-size: var(--text-body); }
+.story-chain strong { font-size: 44px; font-weight: 600; }
+.story-chain span, .hero-boundary, .delivery-note, .delivery-metrics dt, .delivery-metrics dd span, .delivery-status { font-size: var(--text-small); }
+.delivery-metrics strong { font-size: 36px; font-weight: 600; }
+.workflow-boundary strong, .workflow-steps h3 { font-size: var(--text-body); font-weight: 600; }
+.workflow-boundary span, .step-index { font-size: var(--text-caption); }
+.workflow-steps p, .case-reasoning p, .case-action strong { font-size: 15px; line-height: 1.65; }
+.case-card > h3 { font-size: 25px; font-weight: 600; line-height: 1.4; }
+.case-meta, .case-reasoning span { font-size: var(--text-caption); }
+.proof-links span { font-size: var(--text-body); font-weight: 500; }
+.proof-links small, .footer p, .email-proof figcaption { font-size: var(--text-caption); }
+.footer > div { font-size: var(--text-small); }
+.footer .footer-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0; }
+.footer-actions a { display: flex; align-items: center; min-height: 44px; font-size: var(--text-small); text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.footer-actions a:hover { color: var(--accent); }
+.email-pages { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; }
+.email-pages button { min-height: 44px; padding: 4px; font: inherit; font-size: 12px; color: var(--muted); border: 1px solid transparent; border-radius: 3px; background: transparent; cursor: pointer; transition: background 160ms ease; }
+.email-pages button[aria-pressed="true"] { color: var(--accent); background: var(--surface); border-color: var(--line); }
+.email-pages button:hover { background: var(--accent-soft); }
+.email-proof img { height: clamp(230px, calc(100svh - 258px), 450px); }
+.email-proof figcaption { margin-top: 8px; }
+.closing-chapter { gap: 16px; }
+.closing-chapter .case-card { padding: 20px 24px; }
+.closing-chapter .proof-section { padding-block: 14px; }
+.closing-chapter .footer { padding-top: 0; }
+@media (min-width: 721px) and (max-height: 760px) {
+  .hero { gap: 14px 40px; }
+  .hero h1 { font-size: 46px; }
+  .hero-lead { font-size: 17px; }
+  .closing-chapter { gap: 12px; }
+  .closing-chapter .case-card { padding: 16px 20px; }
+  .case-card > h3 { margin-bottom: 12px; }
+  .case-meta { margin-bottom: 10px; }
+  .case-reasoning > div { padding-block: 12px; }
+  .case-reasoning .case-action { padding-top: 12px; }
+  .closing-chapter .proof-section { padding-block: 10px; }
+}
+@media (max-width: 960px) and (min-width: 721px) {
+  .hero h1 { font-size: 40px; }
+  :root { --text-section: 30px; }
+}
+@media (max-width: 720px) {
+  :root { --text-body: 15px; --text-small: 13px; --text-section: 28px; }
+  .hero h1 { font-size: 33px; line-height: 1.35; }
+  .hero-lead { font-size: 15px; }
+  .hero-email a > span { font-size: 11px; }
+  .story-chain strong { font-size: 34px; }
+  .story-chain span { font-size: 11px; }
+  .hero-boundary { font-size: 12px; }
+  .delivery-metrics strong { font-size: 30px; }
+  .delivery-metrics dt, .delivery-note { font-size: 12px; }
+  .email-proof img { height: auto; }
+  .email-pages { grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 8px; }
+  .email-pages button { font-size: 11px; }
+  .email-proof figcaption { font-size: 11px; }
+  .case-card > h3 { font-size: 23px; }
+  .closing-chapter { gap: 24px; }
+  .closing-chapter .footer { display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 12px; padding-bottom: 12px; }
+  .footer .footer-actions { grid-column: 2; grid-row: 1 / span 2; }
+  .footer p { grid-column: 1; width: auto; }
+}
+.hero-lead { max-width: 720px; text-wrap: pretty; }

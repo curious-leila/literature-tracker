@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import {
   ArrowRight,
-  ArrowUp,
   ArrowUpRight,
   Braces,
   Check,
@@ -28,6 +27,7 @@ const workflowSteps = [
 function App() {
   const [data, setData] = useState<RunSummary | null>(null);
   const [error, setError] = useState(false);
+  const [emailPage, setEmailPage] = useState(0);
   const [activeSection, setActiveSection] = useState("top");
 
   useEffect(() => {
@@ -97,6 +97,13 @@ function App() {
 
   const featuredCase = data.cases.find((item) => item.relevance === "high") ?? data.cases[0];
   const emailImage = `${import.meta.env.BASE_URL}evidence/email-delivery-proof.png`;
+  const emailPages = [
+    { src: emailImage, label: "交付概览", alt: "邮件首页：159篇处理结果与分层统计" },
+    { src: `${import.meta.env.BASE_URL}evidence/email-reasoning.jpg`, label: "判断理由", alt: "邮件正文：高度相关文献的判定理由、研究交叉点与阅读建议" },
+    { src: `${import.meta.env.BASE_URL}evidence/email-abstracts.jpg`, label: "浏览摘要", alt: "邮件正文：61篇浏览摘要类别中的前5篇展示" },
+    { src: `${import.meta.env.BASE_URL}evidence/email-archive.jpg`, label: "归档说明", alt: "邮件末尾：背景参考86篇已归档及运行记录入口" },
+  ];
+  const selectedEmail = emailPages[emailPage];
   const fullRunRecord = `${import.meta.env.BASE_URL}run-summary.json`;
   const promptLog = `${GITHUB_URL}/blob/master/docs/prompt-tuning-log.md`;
 
@@ -191,10 +198,10 @@ function App() {
             </div>
 
             <figure className="email-proof">
-              <a href={emailImage} target="_blank" rel="noreferrer" aria-label="打开完整尺寸的邮件交付截图">
+              <a href={selectedEmail.src} target="_blank" rel="noreferrer" aria-label={`打开${selectedEmail.label}原尺寸截图`}>
                 <img
-                  src={emailImage}
-                  alt="手机邮箱中的文献简报，显示本次处理159篇、优先阅读全文12篇、浏览摘要61篇、背景参考86篇"
+                  src={selectedEmail.src}
+                  alt={selectedEmail.alt}
                   width="846"
                   height="1860"
                   loading="lazy"
@@ -202,7 +209,12 @@ function App() {
                 />
                 <span>查看原尺寸 <ArrowUpRight size={15} aria-hidden="true" /></span>
               </a>
-              <figcaption>2026.05 真实运行记录，于 2026.09 复现发送；仅对账号尾号进行隐私遮挡。</figcaption>
+              <div className="email-pages" role="group" aria-label="选择邮件证据截图">
+                {emailPages.map((page, index) => (
+                  <button key={page.label} type="button" aria-pressed={index === emailPage} onClick={() => setEmailPage(index)}>{page.label}</button>
+                ))}
+              </div>
+              <figcaption aria-live="polite">{emailPage + 1} / 4 · {selectedEmail.label}。2026.05 运行记录，于 2026.09 复现发送。</figcaption>
             </figure>
           </div>
         </section>
@@ -279,13 +291,13 @@ function App() {
       <footer className="footer">
         <div><strong>Literature Workflow</strong></div>
         <p>个人产品 · 2026.05 · 数据口径与源码保持一致</p>
-        <a href={GITHUB_URL} target="_blank" rel="noreferrer">审阅源码 <ArrowUpRight size={15} aria-hidden="true" /></a>
+        <nav className="footer-actions" aria-label="页尾操作">
+          <a href={GITHUB_URL} target="_blank" rel="noreferrer">审阅源码</a>
+          <a href="#top">回到顶部</a>
+        </nav>
       </footer>
         </div>
       </main>
-      {activeSection !== "top" && <a className="back-to-top" href="#top" aria-label="回到顶部">
-        <ArrowUp size={17} aria-hidden="true" /><span>回到顶部</span>
-      </a>}
     </>
   );
 }
