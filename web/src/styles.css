@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Evidence Serif";
+  src: url("/literature-tracker/fonts/noto-serif-sc-evidence.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --ink: #282e2b;
   --muted: #626961;
@@ -15,12 +23,12 @@
   text-rendering: optimizeLegibility;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: var(--nav-offset); }
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-offset); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; min-width: 320px; }
 a { color: inherit; }
 a, button { -webkit-tap-highlight-color: transparent; }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2 { text-wrap: balance; font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", SimSun, serif; font-weight: 500; }
+h1, h2 { text-wrap: balance; font-family: "Evidence Serif", "Noto Serif SC", "Songti SC", serif; font-weight: 500; }
 h2 { margin-bottom: 14px; font-size: clamp(25px, 2.4vw, 34px); line-height: 1.5; letter-spacing: -.025em; }
 p { color: var(--muted); line-height: 1.75; }
 svg { flex: 0 0 auto; stroke-width: 1.6; }
@@ -100,7 +108,7 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
 .case-meta { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 18px; color: var(--muted); font-size: 11px; }
 .evidence-badge { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; color: var(--accent); }
 .evidence-badge > span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-.case-card > h3 { margin-bottom: 20px; font-family: "Songti SC", SimSun, serif; font-size: 23px; font-weight: 500; line-height: 1.6; }
+.case-card > h3 { margin-bottom: 20px; font-family: "Evidence Serif", "Noto Serif SC", "Songti SC", serif; font-size: 23px; font-weight: 500; line-height: 1.6; }
 .case-reasoning { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
 .case-reasoning > div { padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); }
 .case-reasoning > div:nth-child(2) { padding-left: 16px; border-left: 1px solid var(--line); }
