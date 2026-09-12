@@ -405,3 +405,69 @@ main, .hero-copy, .section-heading, .delivery-summary, .case-heading,
   .hero-email img { width: auto; max-width: 100%; height: min(360px, 48svh); }
   .hero-boundary { grid-column: 1; grid-row: 4; }
 }
+
+/*
+ * Fallback for iOS/WeChat WebViews that report a desktop layout viewport.
+ * The class is set in index.html from the physical device width before paint.
+ */
+.compact-viewport {
+  --section-gap: 44px;
+  --nav-offset: 120px;
+}
+.compact-viewport .section,
+.compact-viewport .topbar { width: calc(100% - 36px); }
+.compact-viewport .topbar {
+  flex-wrap: wrap;
+  gap: 0;
+  padding-top: 8px;
+}
+.compact-viewport .brand { width: 100%; min-height: 28px; font-size: 18px; }
+.compact-viewport .topbar nav {
+  width: 100%;
+  justify-content: space-between;
+  gap: 4px;
+  padding-block: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.compact-viewport .topbar nav::-webkit-scrollbar { display: none; }
+.compact-viewport .topbar nav a {
+  flex: 0 0 auto;
+  padding-inline: 9px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.compact-viewport .topbar nav a:first-child { margin-left: -9px; }
+.compact-viewport .topbar nav .nav-github { margin-left: 0; }
+.compact-viewport .nav-github > svg:first-child { display: none; }
+.compact-viewport .hero {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 16px;
+  align-content: start;
+  padding-block: 20px 28px;
+}
+.compact-viewport .hero-copy { grid-column: 1; grid-row: 1; width: 100%; }
+.compact-viewport .hero h1 {
+  width: 100%;
+  max-width: 100%;
+  font-size: 33px;
+  line-height: 1.35;
+  text-wrap: wrap;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+.compact-viewport .desktop-break { display: none; }
+.compact-viewport .story-chain {
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+}
+.compact-viewport .hero-email { grid-column: 1; grid-row: 3; width: 100%; }
+.compact-viewport .hero-email img {
+  width: auto;
+  max-width: 100%;
+  height: min(360px, 48svh);
+}
+.compact-viewport .hero-boundary { grid-column: 1; grid-row: 4; }
