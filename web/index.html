@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      /*
+       * Some iOS in-app browsers keep a desktop-sized layout viewport even
+       * when a mobile viewport meta tag is present. Mark the real device as
+       * compact before first paint so the layout does not depend on that
+       * browser-specific viewport value.
+       */
+      (function () {
+        var deviceWidth = Math.min(
+          screen.width || Infinity,
+          screen.height || Infinity,
+          window.visualViewport ? window.visualViewport.width : Infinity
+        );
+        if (/iPhone|iPod/i.test(navigator.userAgent) || deviceWidth <= 720) {
+          document.documentElement.classList.add("compact-viewport");
+        }
+      })();
+    </script>
     <meta name="theme-color" content="#f7f6f2" />
     <meta name="color-scheme" content="light" />
     <link rel="preload" href="/literature-tracker/fonts/noto-serif-sc-evidence.woff2" as="font" type="font/woff2" crossorigin />
