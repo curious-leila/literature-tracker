@@ -44,6 +44,7 @@ svg { flex: 0 0 auto; stroke-width: 1.6; }
 .topbar nav a:hover, .topbar nav a[aria-current="location"] { color: var(--accent); background: var(--accent-soft); }
 .topbar nav a[aria-current="location"] { box-shadow: inset 0 -2px var(--accent); }
 .topbar nav .nav-github { margin-left: 10px; padding-right: 0; color: var(--ink); }
+.nav-toggle { display: none; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 270px; column-gap: 64px; row-gap: 22px; padding-block: clamp(32px, 5vh, 56px) 30px; }
 .project-name { margin-bottom: 10px; color: var(--ink); font-size: 13px; font-weight: 500; letter-spacing: .05em; }
 .hero-copy { max-width: 750px; align-self: center; }
@@ -471,3 +472,119 @@ main, .hero-copy, .section-heading, .delivery-summary, .case-heading,
   height: min(360px, 48svh);
 }
 .compact-viewport .hero-boundary { grid-column: 1; grid-row: 4; }
+
+/* Compact navigation and content stacking, including iOS WeChat WebViews. */
+@media (max-width: 720px) {
+  :root { --nav-offset: 76px; }
+  .topbar {
+    min-height: 64px;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+  .brand { width: auto; min-width: 0; min-height: 44px; }
+  .nav-toggle {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(40, 46, 43, .12);
+  }
+  .nav-toggle svg { width: 21px; height: 21px; }
+  .topbar nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    display: none;
+    width: min(230px, calc(100vw - 36px));
+    padding: 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    overflow: visible;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 14px 34px rgba(40, 46, 43, .18), 0 3px 10px rgba(40, 46, 43, .08);
+  }
+  .topbar nav.is-open { display: flex; }
+  .topbar nav a,
+  .topbar nav a:first-child,
+  .topbar nav .nav-github {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 0 12px;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+  .topbar nav a[aria-current="location"] { box-shadow: inset 3px 0 var(--accent); }
+
+  .delivery-section { display: block; }
+  .delivery-section > .section-heading { margin-bottom: 20px; }
+  .delivery-summary { width: 100%; margin-bottom: 20px; }
+  .email-proof { width: 100%; }
+}
+
+.compact-viewport { --nav-offset: 76px; }
+.compact-viewport .topbar {
+  min-height: 64px;
+  padding: 0;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+.compact-viewport .brand { width: auto; min-width: 0; min-height: 44px; }
+.compact-viewport .nav-toggle {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(40, 46, 43, .12);
+}
+.compact-viewport .nav-toggle svg { width: 21px; height: 21px; }
+.compact-viewport .topbar nav {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: none;
+  width: min(230px, calc(100vw - 36px));
+  padding: 8px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  overflow: visible;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(40, 46, 43, .18), 0 3px 10px rgba(40, 46, 43, .08);
+}
+.compact-viewport .topbar nav.is-open { display: flex; }
+.compact-viewport .topbar nav a,
+.compact-viewport .topbar nav a:first-child,
+.compact-viewport .topbar nav .nav-github {
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 12px;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.compact-viewport .topbar nav a[aria-current="location"] { box-shadow: inset 3px 0 var(--accent); }
+.compact-viewport .delivery-section { display: block; }
+.compact-viewport .delivery-section > .section-heading { margin-bottom: 20px; }
+.compact-viewport .delivery-summary { width: 100%; margin-bottom: 20px; }
+.compact-viewport .email-proof { width: 100%; }
