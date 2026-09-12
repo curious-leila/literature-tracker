@@ -9,8 +9,10 @@ import {
   FileInput,
   Link2,
   Mail,
+  Menu,
   SearchCheck,
   ShieldCheck,
+  X,
 } from "lucide-react";
 import type { RunSummary } from "./types";
 
@@ -29,6 +31,7 @@ function App() {
   const [error, setError] = useState(false);
   const [emailPage, setEmailPage] = useState(0);
   const [activeSection, setActiveSection] = useState("top");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}run-summary.json`)
@@ -130,10 +133,20 @@ function App() {
         <a className="brand" href="#top" aria-label="返回页面顶部">
           <span>Literature Workflow</span>
         </a>
-        <nav aria-label="主导航">
-          <a href="#delivery" aria-current={activeSection === "delivery" ? "location" : undefined}>邮件证据</a>
-          <a href="#workflow" aria-current={activeSection === "workflow" ? "location" : undefined}>工作流</a>
-          <a href="#case" aria-current={activeSection === "case" ? "location" : undefined}>判断案例</a>
+        <button
+          className="nav-toggle"
+          type="button"
+          aria-label={menuOpen ? "关闭导航" : "打开导航"}
+          aria-expanded={menuOpen}
+          aria-controls="primary-nav"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+        </button>
+        <nav id="primary-nav" className={menuOpen ? "is-open" : ""} aria-label="主导航">
+          <a href="#delivery" onClick={() => setMenuOpen(false)} aria-current={activeSection === "delivery" ? "location" : undefined}>邮件证据</a>
+          <a href="#workflow" onClick={() => setMenuOpen(false)} aria-current={activeSection === "workflow" ? "location" : undefined}>工作流</a>
+          <a href="#case" onClick={() => setMenuOpen(false)} aria-current={activeSection === "case" ? "location" : undefined}>判断案例</a>
           <a className="nav-github" href={GITHUB_URL} target="_blank" rel="noreferrer">
             <Code2 size={16} aria-hidden="true" />
             GitHub
