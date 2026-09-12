@@ -588,3 +588,122 @@ main, .hero-copy, .section-heading, .delivery-summary, .case-heading,
 .compact-viewport .delivery-section > .section-heading { margin-bottom: 20px; }
 .compact-viewport .delivery-summary { width: 100%; margin-bottom: 20px; }
 .compact-viewport .email-proof { width: 100%; }
+
+
+/*
+ * Complete mobile fallback for iOS in-app browsers.
+ *
+ * Some WeChat WebViews on iPhone expose a desktop-sized layout viewport, so
+ * none of the max-width: 720px rules above match.  The compact marker is set
+ * from the physical device before first paint; every desktop grid therefore
+ * needs an equivalent compact override, not only the hero and delivery area.
+ */
+.compact-viewport h2,
+.compact-viewport .section-heading h2,
+.compact-viewport .proof-copy h2 {
+  width: 100%;
+  max-width: 100%;
+  font-size: 28px;
+  line-height: 1.5;
+  text-wrap: wrap;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+.compact-viewport .eyebrow { margin-bottom: 12px; font-size: 12px; }
+.compact-viewport .section-heading > p:last-child,
+.compact-viewport .proof-copy p:last-child { font-size: 15px; }
+.compact-viewport .delivery-section,
+.compact-viewport .workflow-section,
+.compact-viewport .closing-chapter {
+  min-height: 0;
+  margin-top: 20px;
+  padding-bottom: 28px;
+}
+
+.compact-viewport .delivery-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.compact-viewport .delivery-metrics > div { min-height: 68px; }
+.compact-viewport .delivery-metrics > div:first-child { grid-column: 1 / -1; }
+.compact-viewport .delivery-metrics strong { font-size: 30px; }
+.compact-viewport .delivery-metrics dt,
+.compact-viewport .delivery-note { font-size: 12px; }
+.compact-viewport .email-proof { padding: 16px; }
+.compact-viewport .email-proof img { width: auto; max-width: 100%; height: auto; }
+.compact-viewport .email-pages {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 8px;
+}
+.compact-viewport .email-pages button { font-size: 11px; }
+.compact-viewport .email-proof figcaption {
+  max-width: none;
+  font-size: 11px;
+}
+
+.compact-viewport .workflow-boundary {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+}
+.compact-viewport .workflow-boundary strong {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.compact-viewport .workflow-steps {
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+.compact-viewport .workflow-steps li,
+.compact-viewport .workflow-steps li:first-child {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 5px;
+  min-width: 0;
+  padding: 16px 30px 16px 0;
+}
+.compact-viewport .workflow-steps li + li {
+  border-left: 0;
+  border-top: 1px solid var(--line);
+}
+.compact-viewport .workflow-steps li > svg {
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+.compact-viewport .workflow-steps h3,
+.compact-viewport .workflow-steps p {
+  grid-column: 2;
+  margin: 0;
+}
+.compact-viewport .workflow-steps h3 { font-size: 15px; }
+.compact-viewport .workflow-steps p { font-size: 15px; line-height: 1.65; }
+.compact-viewport .step-index { top: 18px; right: 0; }
+
+.compact-viewport .closing-chapter { gap: 24px; }
+.compact-viewport .case-section,
+.compact-viewport .proof-section {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+.compact-viewport .case-card { padding: 20px; }
+.compact-viewport .case-card > h3 { font-size: 23px; }
+.compact-viewport .case-reasoning { grid-template-columns: minmax(0, 1fr); }
+.compact-viewport .case-reasoning > div:nth-child(2) {
+  padding-left: 0;
+  border-left: 0;
+}
+.compact-viewport .proof-section { padding-block: 24px; }
+.compact-viewport .closing-chapter .proof-section { gap: 20px; }
+.compact-viewport .closing-chapter .footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+  padding: 0 0 12px;
+}
+.compact-viewport .footer .footer-actions {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.compact-viewport .footer p { grid-column: 1; width: auto; }
