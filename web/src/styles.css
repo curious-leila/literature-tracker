@@ -361,3 +361,47 @@ h2, .closing-chapter h2, .proof-copy h2 { font-size: var(--text-section); font-w
   .footer p { grid-column: 1; width: auto; }
 }
 .hero-lead { max-width: 720px; text-wrap: pretty; }
+
+/*
+ * Keep the page usable in mobile in-app browsers that expose a wider layout
+ * viewport (commonly around 980px).  Without this intermediate state the
+ * desktop header can consume almost the full row and trigger horizontal
+ * overflow before the 720px phone styles are reached.
+ */
+html, body, #root { max-width: 100%; overflow-x: clip; }
+main, .hero-copy, .section-heading, .delivery-summary, .case-heading,
+.case-card, .proof-copy, .proof-links { min-width: 0; }
+
+@media (max-width: 1024px) {
+  .topbar { flex-wrap: wrap; gap: 0; padding-top: 8px; }
+  .brand { width: 100%; min-height: 30px; }
+  .topbar nav { width: 100%; justify-content: space-between; gap: 4px; padding-block: 4px; }
+  .topbar nav .nav-github { margin-left: 0; }
+}
+
+@media (max-width: 720px) {
+  :root { --nav-offset: 120px; }
+  .topbar { padding-top: 8px; }
+  .topbar nav { overflow-x: auto; scrollbar-width: none; }
+  .topbar nav::-webkit-scrollbar { display: none; }
+  .topbar nav a { flex: 0 0 auto; white-space: nowrap; }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+  .hero-copy { grid-column: 1; grid-row: 1; }
+  .hero h1,
+  .section-heading h2,
+  .proof-copy h2 {
+    width: 100%;
+    max-width: 100%;
+    text-wrap: wrap;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+  .story-chain { grid-column: 1; grid-row: 2; }
+  .hero-email { grid-column: 1; grid-row: 3; width: 100%; }
+  .hero-email img { width: auto; max-width: 100%; height: min(360px, 48svh); }
+  .hero-boundary { grid-column: 1; grid-row: 4; }
+}
